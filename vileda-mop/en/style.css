@@ -1,0 +1,41 @@
+*{user-select:none}body{padding:0;margin:0}.ads-body{box-sizing: border-box;cursor: pointer;position:absolute;top:0;left:0;right:0;margin:auto;overflow:hidden}.loader-dash{background-color:#fefefe;display:block;position:absolute;height:100%;width:100%;top:0;left:0;bottom:0;right:0;margin:auto;z-index:999999}.loader,.loader:after,.loader:before{background:#535353;-webkit-animation:load1 1s infinite ease-in-out;animation:load1 1s infinite ease-in-out;width:.5em}.loader{color:#535353;text-indent:-9999em;position:absolute;font-size:6px;-webkit-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0);-webkit-animation-delay:-.16s;animation-delay:-.16s;left:0;right:0;top:0;bottom:0;margin:auto}.loader:after,.loader:before{position:absolute;top:0;content:''}.loader:before{left:-1.5em;-webkit-animation-delay:-.32s;animation-delay:-.32s}.loader:after{left:1.5em}@-webkit-keyframes load1{0%,100%,80%{box-shadow:0 0;height:4em}40%{box-shadow:0 -2em;height:5em}}@keyframes load1{0%,100%,80%{box-shadow:0 0;height:4em}40%{box-shadow:0 -2em;height:5em}}
+.full-screen{width:100%;position: absolute;top: 0;left: 0;right: 0;bottom: 0;margin: auto;}
+.video_bg{object-fit: fill;position: absolute;left: 0;right: 0;top: 60px;width: 300px;height: 165px;background-color: #000;z-index: 9999;margin: 0 auto;}
+#page1,#page2,#page3{display: none;}
+
+/* Slider */
+
+.slider{ top: 300px;visibility: hidden; }
+.slider,.slider .owl-stage-outer{
+    overflow: visible;
+}
+
+.slider .owl-item{
+    overflow: hidden;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.slider .owl-item.active.center{
+    transition-duration: 0.5s;
+    transform: scale(2.0);
+    -webkit-transform: scale(2.0);
+    -moz-transform: scale(2.0);
+    -ms-transform: scale(2.0);
+    -o-transform: scale(2.0);
+    z-index: 9999;
+    box-shadow: 0 0 10px rgb(250, 151, 151);
+}
