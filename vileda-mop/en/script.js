@@ -29,6 +29,10 @@ $(function(){
     function adLoad(){
         var loader = document.getElementById("page1");
         loader.style.display="block";
+
+        setTimeout(function(){
+            $('.animate_hand_1').show();
+        },1200);
     }
 
     // Swipe Function
@@ -47,6 +51,7 @@ $(function(){
 
         setTimeout(function(){
             $('.slider').css({ 'visibility': 'visible' });
+            $('.animate_hand_2').show();
         },1200);
 
     });
@@ -65,18 +70,14 @@ $(function(){
 
     var owl = $('.slider');
 
-    owl.children().each( function( index ) {
-        $(this).attr( 'data-position', index ); // NB: .attr() instead of .data()
-    });
-
     owl.owlCarousel({
         loop            : true,
         margin          : 30,
         nav             : false,
         items           : 4,
         center          : true,
-        autoplay        : true,
-        autoplayTimeout : 3000,
+        // autoplay        : true,
+        // autoplayTimeout : 3000,
         dots: false
     });
     // owl.on('changed.owl.carousel', function(event) {        

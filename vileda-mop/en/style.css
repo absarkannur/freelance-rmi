@@ -5,7 +5,7 @@
 
 /* Slider */
 
-.slider{ top: 300px;visibility: hidden; }
+.slider{ top: 290px;visibility: hidden; }
 .slider,.slider .owl-stage-outer{
     overflow: visible;
 }
@@ -31,11 +31,40 @@
 
 .slider .owl-item.active.center{
     transition-duration: 0.5s;
-    transform: scale(2.0);
-    -webkit-transform: scale(2.0);
-    -moz-transform: scale(2.0);
-    -ms-transform: scale(2.0);
-    -o-transform: scale(2.0);
+    transform: scale(1.8);
+    -webkit-transform: scale(1.8);
+    -moz-transform: scale(1.8);
+    -ms-transform: scale(1.8);
+    -o-transform: scale(1.8);
     z-index: 9999;
     box-shadow: 0 0 10px rgb(250, 151, 151);
+}
+
+
+.animate_hand_1{
+    display: none;
+    animation-name: anim_1;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+
+@keyframes anim_1 {
+    from { bottom: 0px; }
+    to { bottom: 50px; }
+}
+
+.animate_hand_2{
+    display: none;
+    animation-name: anim_2;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+
+@keyframes anim_2 {
+    from { bottom: 0px; }
+    to { bottom: 40px; }
 }
