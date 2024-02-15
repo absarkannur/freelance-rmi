@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="ad.size" content="width=320,height=480" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no">
+    <link rel="shortcut icon" href="#">
+    <title></title>
+    <link rel="stylesheet" href="./animate.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript">
+        var clickTag = "https://google.com/";
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        
+        // ${CACHEBUSTER} 
+        // ${CLICK_URL_ENC}
+        
+        function clickThrough() {
+            javascript:window.open(window.clickTag);
+        }
+    </script>
+    
+    <div class="ads-body">
+
+        <div class="loader-dash" id="loader"><div class="loader">...</div></div>
+
+        <div id="page1">
+
+            <img src="./bg1.png" class="full-screen_1" id="get_size">
+            <img src="./logo.png" class="full-screen_1" />
+            <img src="./layer1-1.png" class="full-screen_1 animate__animated animate__fadeInLeft" />
+            <img src="./layer1-2.png" class="full-screen_1 animate__animated animate__fadeInRight" />
+
+
+        </div>
+
+        <div id="page2">
+            
+            <img src="./bg1.png" class="full-screen_1">
+            <img src="./logo.png" class="full-screen_1" />
+            
+            <span class="js_mop"></span>
+
+            <div id="promo" class="scratchpad"></div>
+            
+            <img src="./hand.png" class="js_hand animate__animated animate__wobble animate__infinite" />
+
+        </div>
+
+        <div id="page3" onclick="clickThrough()">
+
+            <img src="./bg2.png" class="full-screen_1">
+            <img src="./logo.png" class="full-screen_1" />
+
+            <img src="./layer2-1.png" class="full-screen_1 animate__animated animate__fadeInLeft" />
+            <img src="./layer2-2.png" class="full-screen_1 animate__animated animate__fadeIn" />
+            <img src="./layer2-3.png" class="full-screen_1 animate__animated animate__fadeInRight" />
+        </div
+
+    </div>
+
+    
+	<script src="./jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="./wScratchPad.min.js"></script>
+    <script src="./script.js"></script>
+    
+</body>
+</html>
