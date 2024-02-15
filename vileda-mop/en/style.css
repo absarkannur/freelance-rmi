@@ -1,13 +1,25 @@
 *{user-select:none}body{padding:0;margin:0}.ads-body{box-sizing: border-box;cursor: pointer;height:100%;position:absolute;top:0;left:0;right:0;margin:auto;overflow:hidden}.loader-dash{background-color:#fefefe;display:block;position:absolute;height:100%;width:100%;top:0;left:0;bottom:0;right:0;margin:auto;z-index:999999}.loader,.loader:after,.loader:before{background:#535353;-webkit-animation:load1 1s infinite ease-in-out;animation:load1 1s infinite ease-in-out;width:.5em}.loader{color:#535353;text-indent:-9999em;position:absolute;font-size:6px;-webkit-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0);-webkit-animation-delay:-.16s;animation-delay:-.16s;left:0;right:0;top:0;bottom:0;margin:auto}.loader:after,.loader:before{position:absolute;top:0;content:''}.loader:before{left:-1.5em;-webkit-animation-delay:-.32s;animation-delay:-.32s}.loader:after{left:1.5em}@-webkit-keyframes load1{0%,100%,80%{box-shadow:0 0;height:4em}40%{box-shadow:0 -2em;height:5em}}@keyframes load1{0%,100%,80%{box-shadow:0 0;height:4em}40%{box-shadow:0 -2em;height:5em}}
 .full-screen{width:100%;position: absolute;left: 0;right: 0;top: 0;bottom:0;margin: auto;overflow: hidden;z-index: 999;}
 .full-screen_1{width:100%;position: absolute;left: 0;right: 0;top: 0;margin: auto;overflow: hidden;z-index: 999;}
-.video_bg{position: absolute;left: 0;right: 0;top: 0px;width: 320px;height: 180px;background-color: #000;z-index: 9999;}
+
+.video_bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 70px;
+    width: 90%;
+    height: 180px;
+    background-color: #000;
+    z-index: 9999;
+    margin: 0 auto;
+    object-fit: fill;
+}
 
 #page1,#page2,#page3{display: none;}
 
 /* Slider */
 
-.slider{ top: 290px;visibility: hidden; }
+.slider{ top: 340px; visibility: hidden; z-index: 999;}
 .slider,.slider .owl-stage-outer{
     overflow: visible;
 }
@@ -49,12 +61,13 @@
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-timing-function: ease;
+    /* animation-direction: reverse; */
+    animation-timing-function: linear;
 }
 
 @keyframes anim_1 {
-    from { bottom: 0px; }
-    to { bottom: 50px; }
+    from { top: 0px; }
+    to { top: -50px; }
 }
 
 .animate_hand_2{
@@ -67,6 +80,6 @@
 }
 
 @keyframes anim_2 {
-    from { bottom: 0px; }
-    to { bottom: 40px; }
+    from { top: 0px; }
+    to { top: -25px; }
 }

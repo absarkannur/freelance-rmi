@@ -63,7 +63,7 @@ $(function(){
         // Pause the video
         let vid = document.getElementById("video_bg");
         vid.pause();
-        
+
     });
 
     //  Owl Carousel
