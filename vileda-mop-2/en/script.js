@@ -57,10 +57,6 @@ $(function(){
     // 
 
     function init() {
-
-        setTimeout(function(){
-            $('.js_hand').hide();
-        }, 4000);
     
         $('#promo').wScratchPad({
             // the size of the eraser
@@ -73,7 +69,7 @@ $(function(){
             fg: bg1,
             // The cursor (coin) image
             scratchMove: function(e, percent) {
-                if ( percent >= 40 ) {
+                if ( percent >= 30 ) {
                     LastPage();
                 }
     
@@ -93,7 +89,7 @@ $(function(){
         $('.js_hand').hide();
 
         // console.log( e );
-        $('.js_mop').css({ 'top': e.offsetY-290, 'left': e.offsetX-220 });
+        $('.js_mop').css({ 'top': e.offsetY-350, 'left': e.offsetX-220 });
     
     });
 

@@ -4,6 +4,10 @@
 .full-screen_1{width:100%;position: absolute;left: 0;right: 0;top: 0;margin: auto;overflow: hidden;z-index: 999;}
 .video_bg{position: absolute;left: 0;right: 0;top: 0px;width: 320px;height: 180px;background-color: #000;z-index: 9999;}
 
+html,
+body{
+    overflow: hidden !important;
+}
 
 #page1,#page2,#page3{display: none;}
 
@@ -36,8 +40,8 @@ div#promo {
 
 .js_mop{
     position: absolute;
-    height: 220px;
-    width: 100px;
+    height: 300px;
+    width: 150px;
     z-index: 9999999;
     right: 0;
     left: 0;
@@ -46,6 +50,6 @@ div#promo {
     background-image: url('./mop.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
