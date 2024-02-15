@@ -69,7 +69,7 @@ $(function(){
             fg: bg1,
             // The cursor (coin) image
             scratchMove: function(e, percent) {
-                if ( percent >= 30 ) {
+                if ( percent >= 45 ) {
                     LastPage();
                 }
     
