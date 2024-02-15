@@ -1,0 +1,110 @@
+*{user-select: none;}
+body{padding: 0;margin: 0;}#trigger{cursor: pointer;}
+.ad-body{border: solid 1px #DDD;width: 320px;height: 480px;position: absolute;top: 0;left: 0;right:0;margin:auto;overflow: hidden;}
+
+.full-screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.page2,.page3,.page4,.page5{
+    display: none;
+}
+
+.video_bg{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 121px;
+    width: 320px;
+    height: 181px;
+    background-color: #000;
+    z-index: 9999;
+}
+
+.clk_explore,
+.clk_locate{
+    position: absolute;
+    width: 244px;
+    height: 35px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.clk_explore{
+    top: 325px;
+}
+
+.clk_locate{
+    top: 368px;
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 2px;
+}
+
+.clk_learmore_1{
+    position: absolute;
+    display: block;
+    height: 35px;
+    width: 244px;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.back{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    left: 10px;
+    z-index: 999999;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgEAQAAACJ4248AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAAGAAAABgAPBrQs8AAAAHdElNRQflAw4LDRX5BFg1AAAAk0lEQVRYw+3Xyw2AIBAA0dU+aMmGrMOLRVgD3ihCK9AaGG8aTfwcZIlxaeANgRBWJMEiOkcMAeYZqiqFcYOPI+vyPiMOUNeK+DDs7Ni2UJaG/w0vCsMNN/xl/Pi2N40KLiICXZcav36xAJWdnvq5j2CLyHQJLeJjEQp/AIuwCIt4FpFpNDuP6HvVgC0iBOI03Y3nC8ehpg+OYM+yAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIxLTAzLTE0VDExOjEzOjIxKzAwOjAwZQdTpgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMS0wMy0xNFQxMToxMzoyMSswMDowMBRa6xoAAAAASUVORK5CYII=");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 14px;
+    cursor: pointer;
+}
+
+div#map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 345px;
+    z-index: 9999;
+}
+
+.owl-nav {
+    position: absolute;
+}
+
+button.owl-next span,
+button.owl-prev span{
+    font-size: 70px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+button.owl-next span{
+    top: -281px;
+    left: 282px;
+    color: #fff;
+}
+button.owl-prev span{
+    top: -281px;
+    left: 20px;
+    color: #fff;
+}

@@ -1,0 +1,67 @@
+body{padding: 0;margin: 0;}#trigger{cursor: pointer;}
+.ad-body{border: solid 1px #DDD;width: 320px;height: 480px;position: absolute;top: 0;left: 0;right:0;margin:auto;overflow: hidden;}
+
+.full-screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.started{
+    display: none;
+}
+
+.start_engine{
+    display: block;
+    position: absolute;
+    height: 170px;
+    width: 195px;
+    left: 0px;
+    right: 0px;
+    top: 154px;
+    margin: auto;
+    z-index: 9999;
+}
+
+#myAudio{
+    visibility: hidden;
+    position: absolute;
+    left: -500px;
+}
+
+
+.phone {
+    -webkit-animation: vibrate 0.32s cubic-bezier(.36, .07, .19, .97) infinite;
+    animation: vibrate 0.32s cubic-bezier(.36, .07, .19, .97) infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+  }
+  
+  @keyframes vibrate {
+    0.50%, 90% {
+     -webkit-transform: translate3d(-1px, 0, 0);
+     transform: translate3d(-1px, 0, 0);
+   }
+  
+  0.50%, 80% {
+    -webkit-transform: translate3d(1px, 0, 0);
+    transform: translate3d(1px, 0, 0);
+  }
+  
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  0.50%, 60% {
+    -webkit-transform: translate3d(1px, 0, 0);
+    transform: translate3d(1px, 0, 0);
+  }
+  }

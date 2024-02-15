@@ -1,0 +1,34 @@
+*{user-select: none;}
+body{padding: 0;margin: 0;}#trigger{cursor: pointer;}
+.ad-body{border: solid 1px #DDD;width: 320px;height: 480px;position: absolute;top: 0;left: 0;right:0;margin:auto;overflow: hidden;}
+
+.ad-body img{
+    width: 100%;
+}
+
+.full-screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.learnmore{
+    display: block;
+    height: 45px;
+    width: 320px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 9999;
+}
+
+iframe.video {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 73px;
+    margin: 0 auto;
+}
