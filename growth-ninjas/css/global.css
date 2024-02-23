@@ -1,0 +1,19 @@
+
+*{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+:root {
+    --main-menu-color: #0a074e;
+    --main-white-color: #ffffff;
+    --main-black-color: #000000;
+}
+  
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
