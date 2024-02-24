@@ -1,0 +1,152 @@
+
+
+@media only screen and (max-width: 1400px) {
+
+    .seo-wrapper .header h2,
+    .influencer-wrapper .header h2,
+    .lead-generation-wrapper .header h2,
+    .brand-awareness-wrapper .header h2 {
+        font-size: 46px;
+    }
+    .seo-wrapper p,
+    .influencer-wrapper p,
+    .lead-generation-wrapper p,
+    .brand-awareness-wrapper p {
+        font-size: 18px;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+
+    .banner-content .h1{
+        font-size: 80px;
+    }
+
+    .seo-wrapper .header,
+    .influencer-wrapper .header,
+    .lead-generation-wrapper .header,
+    .brand-awareness-wrapper .header{
+        height: 150px;
+    }
+
+    .brand-awareness-wrapper .image-box{
+        height: 400px;
+    }
+
+    .seo-wrapper .image-box,
+    .seo-wrapper .image-box .imagethmb_inner,
+    .influencer-wrapper .image-box,
+    .influencer-wrapper .image-box .imagethmb_inner,
+    .lead-generation-wrapper .image-box,
+    .lead-generation-wrapper .image-box .imagethmb_inner,
+    .brand-awareness-wrapper .image-box,
+    .brand-awareness-wrapper .image-box .imagethmb_inner{
+        height: 400px;
+    }
+
+    .seo-wrapper .header h2,
+    .influencer-wrapper .header h2,
+    .lead-generation-wrapper .header h2,
+    .brand-awareness-wrapper .header h2 {
+        font-size: 30px;
+        height: 35px;
+        line-height: 35px;
+    }
+    .seo-wrapper p,
+    .influencer-wrapper p,
+    .lead-generation-wrapper p,
+    .brand-awareness-wrapper p {
+        font-size: 16px;
+    }
+
+    .form-wrapper .contact-info ul li.header{
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    .form-wrapper .contact-info ul li.list{
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .nav-wrapper .box{
+        width: 100%;
+    }
+
+    .banner-content .h1{
+        font-size: 60px;
+        line-height: 56px;
+    }
+
+    .seo-wrapper,
+    .influencer-wrapper,
+    .lead-generation-wrapper,
+    .brand-awareness-wrapper{
+        padding: 20px 0;
+    }
+
+    .seo-wrapper .image-box,
+    .seo-wrapper .image-box .imagethmb_inner,
+    .influencer-wrapper .image-box,
+    .influencer-wrapper .image-box .imagethmb_inner,
+    .lead-generation-wrapper .image-box,
+    .lead-generation-wrapper .image-box .imagethmb_inner,
+    .brand-awareness-wrapper .image-box,
+    .brand-awareness-wrapper .image-box .imagethmb_inner{
+        height: 300px;
+        margin-top: 50px;
+    }
+
+    .form-wrapper .contact-info{
+        padding-bottom: 50px;
+    }
+
+    .seo-wrapper p,
+    .influencer-wrapper p,
+    .lead-generation-wrapper p,
+    .brand-awareness-wrapper p {
+        margin-bottom: 20px;
+    }
+
+    .footer-wrapper ul{
+        margin-bottom: 30px;
+    }
+
+    .footer-wrapper ul li p{
+        line-height: 20px;
+    }
+
+    footer .copyright{
+        font-size: 12px;
+    }
+
+    .nav-wrapper .navbar-collapse{
+        background-color: var(--main-blackblue-color);
+        padding: 10px;
+    }
+    
+    .nav-wrapper .navbar-nav .nav-item:last-child .nav-link{
+        border: none;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .banner-content .h1{
+        font-size: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .banner-content .h3{
+        width: 80%;
+        font-size: 14px;
+    }
+
+}

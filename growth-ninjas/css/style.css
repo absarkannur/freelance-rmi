@@ -1,17 +1,26 @@
-/* : )) */
+/* : ))  ----------------------------*/
 
 html,body{
     height: 100%;
 }
 
-/* Header */
+/* Header  ----------------------------*/
 
 .nav-wrapper,
 .navbar{
-    background-color: var(--main-menu-color);
+    background-color: var(--main-menu-color) !important;
     height: 100px;
     width: 100%;
+    padding: 0;
 }
+
+.nav-wrapper .box{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 .nav-wrapper .aligb-navbar {
     justify-content: end;
@@ -21,14 +30,15 @@ html,body{
     border-bottom: solid 1px var(--main-menu-color);
 }
 .nav-wrapper .nav-link:hover{
-    border-bottom: solid 1px var(--main-white-color);;
+    transition-duration: 0.5s;
+    border-bottom: solid 1px var(--main-white-color);
 }
 .nav-wrapper .nav-link.active,
 .nav-wrapper .nav-link.show{
     color: var(--main-white-color);
 }
 
-/* Banner */
+/* Banner  ----------------------------*/
 
 .banner-fixed{
     display: none;
@@ -71,7 +81,6 @@ html,body{
     font-size: 100px;
     text-align: center;
     clear: both;
-    width: 60%;
     line-height: 90px;
     margin: 0 auto;
 }
@@ -85,7 +94,7 @@ html,body{
     margin: 0 auto;
 }
 
-/* CEO Wrapper */
+/* CEO Wrapper  ----------------------------*/
 
 .seo-wrapper{
     background: linear-gradient(to bottom,rgba(10,7,78,1) 1%,rgba(31,5,124,1) 67%);
@@ -122,15 +131,20 @@ html,body{
 .seo-wrapper .image-box{
     display: flex;
     width: 100%;
-    height: 600px;
     justify-content: center;
     align-items: center;
 }
 
-/* influencer Wrapper */
+.seo-wrapper .image-box,
+.seo-wrapper .image-box .imagethmb_inner{
+    height: 600px;
+}
+
+
+/* influencer Wrapper  ----------------------------*/
 
 .influencer-wrapper{
-    background-color: rgb(0, 8, 255);
+    background-color: var(--main-blue-color);
     min-height: 300px;
     padding: 50px 0;
 }
@@ -163,12 +177,16 @@ html,body{
 .influencer-wrapper .image-box{
     display: flex;
     width: 100%;
-    height: 600px;
     justify-content: center;
     align-items: center;
 }
 
-/* lead-generation Wrapper */
+.influencer-wrapper .image-box,
+.influencer-wrapper .image-box .imagethmb_inner{
+    height: 600px;
+}
+
+/* lead-generation Wrapper  ----------------------------*/
 
 .lead-generation-wrapper{
     background: linear-gradient(to bottom,rgb(255, 77, 0) 1%,rgb(255, 162, 0) 67%);
@@ -204,12 +222,16 @@ html,body{
 .lead-generation-wrapper .image-box{
     display: flex;
     width: 100%;
-    height: 600px;
     justify-content: center;
     align-items: center;
 }
 
-/* brand-awareness Wrapper */
+.lead-generation-wrapper .image-box,
+.lead-generation-wrapper .image-box .imagethmb_inner{
+    height: 600px;
+}
+
+/* brand-awareness Wrapper  ----------------------------*/
 
 .brand-awareness-wrapper{
     background: linear-gradient(to bottom,rgba(10,7,78,1) 1%,rgba(31,5,124,1) 67%);
@@ -245,12 +267,16 @@ html,body{
 .brand-awareness-wrapper .image-box{
     display: flex;
     width: 100%;
-    height: 600px;
     justify-content: center;
     align-items: center;
 }
 
-/* Quotes Wrapper */
+.brand-awareness-wrapper .image-box,
+.brand-awareness-wrapper .image-box .imagethmb_inner{
+    height: 600px;
+}
+
+/* Quotes Wrapper  ----------------------------*/
 
 .quotes-wrapper{
     background-color: transparent;
@@ -273,14 +299,59 @@ html,body{
     text-align: center;
 }
 
-/* Form Wrapper */
+/* Form Wrapper  ----------------------------*/
 
 .form-wrapper{
     background: url('./../images/Incubeta-gradient.webp');
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     min-height: 200px;
     padding: 60px 0;
+}
+
+.form-wrapper .contact-info{
+    clear: both;
+}
+
+.form-wrapper .contact-info ul{
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.form-wrapper .contact-info ul li{
+    color: var(--main-white-color);
+    display: flex;
+    align-items: center;
+}
+
+.form-wrapper .contact-info ul li.header{
+    font-size: 46px;
+    color: var(--main-white-color);
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+.form-wrapper .contact-info ul li.list{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-wrapper .contact-info ul li.list span{
+    margin-left: 20px;
+}
+
+.form-wrapper .contact-info .info-icon{
+    color: var(--main-white-color);
+    height: 34px;
+    width: 34px;
+    float: left;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-wrapper h3,
@@ -289,7 +360,7 @@ html,body{
 }
 
 .form-wrapper h3{
-    font-size: 26px;
+    font-size: 32px;
     font-weight: bold;
 }
 
@@ -330,11 +401,66 @@ html,body{
     color: var(--main-white-color);
 }
 
-.form-wrapper .box{
-    height: 100%;
+/* Footer Wrapper  ----------------------------*/
+
+.footer-wrapper{
+    background-color: var(--main-blackblue-color);
     width: 100%;
-    background-image: url('./../images/content-seo.png.webp');
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    clear: both;
+    min-height: 150px;
+    padding: 50px 0;
+}
+
+.footer-wrapper ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-wrapper ul li{
+    width: 100%;
+    line-height: 30px;
+    padding: 0 10px;
+    color: var(--main-white-color);
+}
+
+.footer-wrapper ul li.link:hover{
+    transition-duration: 1s;
+    color: var(--main-purple-color);
+}
+
+.footer-wrapper ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-wrapper ul li em{
+    font-size: 12px;
+}
+
+.footer-wrapper ul li.header{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.footer-wrapper ul li .icon-footer{
+    color: var(--main-white-color);
+    height: 20px;
+    width: 20px;
+    float: left;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .copyright{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    border-top: solid 1px var(--main-purple-color);
+    text-align: center;
+    background-color: var(--main-blackblue-color);
+    color: var(--main-white-color);
+    font-size: 14px;
 }
