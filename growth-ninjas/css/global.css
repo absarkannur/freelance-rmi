@@ -1,0 +1,60 @@
+
+*{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --main-menu-color: #0a074e;
+    --main-blue-color: rgb(0, 8, 255);
+    --main-purple-color: #8f02fe;
+    --main-white-color: #ffffff;
+    --main-black-color: #000000;
+    --main-blackblue-color: #040720;
+}
+  
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.imagethmb {
+    display: table;
+    text-align: center;
+    width: 100%;
+    font-size: 0;
+}
+
+.imagethmb_inner {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.imagethmb img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#desktop-screen{
+    display: block;
+}
+#mobile-screen{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    #desktop-screen{
+        display: none;
+    }
+    #mobile-screen{
+        display: block;
+    }
+}
