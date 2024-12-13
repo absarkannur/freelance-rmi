@@ -1,0 +1,48 @@
+*{user-select:none}body{padding:0;margin:0}.ads-body{box-sizing: border-box;cursor: pointer;position:absolute;top:0;left:0;right:0;margin:auto;overflow:hidden}.loader-dash{background-color:#fefefe;display:block;position:absolute;height:100%;width:100%;top:0;left:0;bottom:0;right:0;margin:auto;z-index:999999}.loader,.loader:after,.loader:before{background:#535353;-webkit-animation:load1 1s infinite ease-in-out;animation:load1 1s infinite ease-in-out;width:.5em}.loader{color:#535353;text-indent:-9999em;position:absolute;font-size:6px;-webkit-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0);-webkit-animation-delay:-.16s;animation-delay:-.16s;left:0;right:0;top:0;bottom:0;margin:auto}.loader:after,.loader:before{position:absolute;top:0;content:''}.loader:before{left:-1.5em;-webkit-animation-delay:-.32s;animation-delay:-.32s}.loader:after{left:1.5em}@-webkit-keyframes load1{0%,100%,80%{box-shadow:0 0;height:4em}40%{box-shadow:0 -2em;height:5em}}@keyframes load1{0%,100%,80%{box-shadow:0 0;height:4em}40%{box-shadow:0 -2em;height:5em}}
+.full-screen{width:100%;position: absolute;top: 0;left: 0;right: 0;bottom: 0;margin: auto;}
+.video_bg{position: absolute;left: 0;right: 0;top: 0px;width: 320px;height: 180px;background-color: #000;z-index: 9999;}
+
+#page1,#page2{display: none;}
+
+.slide_dots{
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 10px;
+    width: 100%;
+    height: 6px;
+    z-index: 99999;
+}
+
+.slide_dots .dot{
+    float: left;
+    width: 23%;
+    margin: 0 1%;
+    height: 6px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.slide_dots .dot .progress{
+    display: block;
+    width: 0%;
+    height: 6px;
+    background-color: #fff;
+}
+
+.animate__swipe {
+    -webkit-animation-name: swipeUp;
+    animation-name: swipeUp;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-animation-iteration-count: 30;
+    animation-iteration-count: 30;
+    transition-duration: 4s;
+}
+
+@keyframes swipeUp {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(38px); }
+}
