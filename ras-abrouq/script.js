@@ -43,6 +43,12 @@ $(function(){
         $('#page2').show();
         handleShowSlider(0);
     });
+
+    swipe.on("swipeup", function () { 
+        $('#page1').hide();
+        $('#page2').show();
+        handleShowSlider(0);
+    });
     
     var interval;
 
@@ -62,7 +68,7 @@ $(function(){
             }
 
             i++;
-        }, 20 )
+        }, 50 )
 
     }
 

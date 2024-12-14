@@ -39,7 +39,6 @@
     transform-origin: center bottom;
     -webkit-animation-iteration-count: 30;
     animation-iteration-count: 30;
-    transition-duration: 4s;
 }
 
 @keyframes swipeUp {
