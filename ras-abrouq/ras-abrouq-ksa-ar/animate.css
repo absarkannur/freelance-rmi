@@ -89,8 +89,8 @@
     animation-duration: calc(var(--animate-duration)*.8)
 }
 .animate__animated.animate__slow {
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
     -webkit-animation-duration: calc(var(--animate-duration)*2);
     animation-duration: calc(var(--animate-duration)*2)
 }
