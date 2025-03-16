@@ -447,6 +447,100 @@
 
 @media ( max-width: 768px ) {
 
+    .section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .fixed-top{
+        position: absolute !important;
+    }
+
+    .navbar-collapse{
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+    }
+
+    .banner-wrapper .slide .slider-title{
+        font-size: 22px;
+    }
+
+    .info-wrapper .title{
+        font-size: 26px;
+    }
+
+    .info-wrapper .achievement{
+        width: 100%;
+        display: block;
+    }
+
+    .years-wrapper .image-wrap, 
+    .years-wrapper .imagethmb_inner{
+        height: 200px;
+    }
+
+    .timeline-wrapper .header,
+    .project-wrapper .header{
+        font-size: 34px;
+    }
+
+    .project-wrapper .sub-header {
+        font-size: 12px;
+    }
+
+    .project-wrapper .property-slider .owl-item.active.center{
+        transform: scale(1);
+    }
+
+    .project-wrapper .property-slider {
+        margin: 0px;
+    }
+
+    .vertical_tabs .tab-wrap{
+        height: 360px;
+    }
+
+    .vertical_tabs .tab-wrap,
+    .vertical_tabs .tab-wrap.active{
+        width: 25%;
+    }
+
+    .vertical_tabs .tab-wrap.active .title{
+        width: 100%;
+    }
+
+    .vertical_tabs{
+        position: relative;
+    }
+
+    .vertical_tabs .tab-wrap.active .content{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        left: 0;
+        top: 361px;
+    }
+
+    .vertical_tabs .content .inner-content{
+        background-color: var(--white);
+        padding: 20px;
+        width: 100%;
+    }
+
+    .vertical_tabs .title .text{
+        font-size: 34px;
+    }
+
+    .years-wrapper{
+        margin-top: 250px;
+    }
+
+    .vertical_tabs .title .plus{
+        width: 20px;
+        height: 20px;
+    }
+
 }
 
 
