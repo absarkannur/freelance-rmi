@@ -1,6 +1,6 @@
 $(function(){
 
-    var owl = $('.owl-carousel');
+    var owl = $('.homebanner');
 
     // Page Loader
     function imgLoadedCallback() {
@@ -25,10 +25,11 @@ $(function(){
     function showPage() {
         var loader = document.getElementById("loader");
         loader.style.display="none";
+        owl.trigger('to.owl.carousel', [0, 0]);
     }
     
     // Home Banner Slider
-    $('.homebanner').owlCarousel({
+    owl.owlCarousel({
         loop:true,
         margin:0,
         nav:false,
