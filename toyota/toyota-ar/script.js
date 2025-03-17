@@ -55,6 +55,30 @@ $(function(){
     function lastSceen(){
         $('#page2').hide();
         $('#page3').show();
+
+        sliderAnimation()
+
     }
+
+    // Slider
+    function sliderAnimation(){
+        setInterval(function(){
+            var index = $('.slider img.active').index();
+            $('.slider img,.slider-dot li').removeClass('active');
+            $('.slider img').eq(index+1).addClass('active');
+            $('.slider-dot li').eq(index+1).addClass('active');
+            if( index == 4) {
+                $('.slider img').eq(0).addClass('active');
+                $('.slider-dot li').eq(0).addClass('active');
+            }
+        },3000)
+    }
+    $('.slider-dot li').click(function(){
+        var index = $(this).index();
+        $('.slider img,.slider-dot li').removeClass('active');
+        $('.slider img').eq(index).addClass('active');
+        $('.slider-dot li').eq(index).addClass('active');
+    });
+
 
 });
