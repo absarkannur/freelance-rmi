@@ -61,8 +61,11 @@ $(function(){
     }
 
     // Slider
+
+    var slierInterval;
+
     function sliderAnimation(){
-        setInterval(function(){
+        slierInterval = setInterval(function(){
             var index = $('.slider img.active').index();
             $('.slider img,.slider-dot li').removeClass('active');
             $('.slider img').eq(index+1).addClass('active');
@@ -71,13 +74,19 @@ $(function(){
                 $('.slider img').eq(0).addClass('active');
                 $('.slider-dot li').eq(0).addClass('active');
             }
-        },3000)
+        },2500)
     }
     $('.slider-dot li').click(function(){
+
+        clearInterval( slierInterval );
+
         var index = $(this).index();
         $('.slider img,.slider-dot li').removeClass('active');
         $('.slider img').eq(index).addClass('active');
         $('.slider-dot li').eq(index).addClass('active');
+        // Strat Again
+        sliderAnimation();
+
     });
 
 
