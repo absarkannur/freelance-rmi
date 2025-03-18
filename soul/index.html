@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta data-template-name="" />
+    <meta name="ad.size" content="width=320,height=480" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title></title>
+
+    <link rel="stylesheet" href="animate.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-118748163-26000', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+    <script src="//s0.2mdn.net/ads/studio/Enabler.js"></script>
+
+</head>
+<body>
+
+    <!-- ${CACHEBUSTER} // ${CLICK_URL_ENC} -->
+
+    <!-- Impression Traker -->
+    <!-- <img width="1" height="1" src="" />     -->
+    <!-- Impression Ended -->
+
+    <!-- Click Tracker -->
+    <script type="text/javascript">
+        function clickThrough() {
+            var clickTag = "https://digitalventure.com";
+            Enabler.exit( 'clickTag', clickTag );
+        }
+    </script>
+
+    <div class="ad-body">
+
+        <div class="page1" id="game_events">
+
+            <img src="./bg.png" class="full-screen" />
+            <img src="./layer1-1.png" class="full-screen animated bounceInLeft" />
+            <img src="./layer1-2.png" class="full-screen animated bounceInRight " />
+            <img src="./layer1-3.png" class="full-screen animated fadeInUp delay" />
+            <img src="./toy.png" class="toy" />
+            <img src="./icon.png" class="end" />
+
+            <img src="./line.png" class="full-screen line animated flash infinite">
+
+            
+            <span class="skip">&nbsp;</span>
+            <canvas id="canvas" width="220" height="220"></canvas>
+
+            <img src="./layer.png" class="full-screen layer_guide" />
+
+        </div>
+
+        <div class="page2">
+            <img src="./bg2.png" class="full-screen" />
+            <img src="./layer2-1.png" class="full-screen animated" onclick="clickThrough()" />
+
+
+            <video class="video_bg" id="video_bg" autoplay muted playsinline="" controls="">
+                <source src="./video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+        </div>
+
+        
+    </div>
+    
+</body>
+</html>
+
+<script src="./jquery.min.js"></script>
+<script src="./hammer.min.js"></script>
+<script src="./script.js"></script>
