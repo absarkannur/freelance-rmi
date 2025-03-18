@@ -1,0 +1,74 @@
+body{padding: 0;margin: 0;}#trigger{cursor: pointer;}
+.ad-body{border: solid 1px #DDD;width: 320px;height: 480px;position: absolute;top: 0;left: 0;right:0;margin:auto;overflow: hidden;}
+.full-screen{
+    position: absolute;top: 0;left: 0;right: 0;bottom: 0;margin: auto;
+}
+
+.page2,.page3,.stage2,.stage3,.stage4,.stage5{
+    display: none;
+}
+
+.btn_become_pilot,
+.btn_watch_trailer,
+.btn_watch_trailer_2,
+.btn_learn_more{
+    position: absolute;
+    display: block;
+    margin: auto;
+    height: 36px;
+    width: 211px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    cursor: pointer;
+}
+
+span.btn_become_pilot,
+span.btn_watch_trailer_2 {
+    bottom: 73px;
+}
+
+span.btn_watch_trailer,
+span.btn_learn_more {
+    bottom: 32px;
+}
+
+.background_video{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.btn_start{
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 40px;
+    left: 0;
+    right: 0;
+    bottom: 23px;
+    margin: auto;
+    z-index: 999;
+}
+
+.btn_fb,
+.btn_wp{
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    bottom: 113px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.btn_wp{
+    right: 105px;
+}
+
+.btn_fb {
+    left: 105px;
+}
