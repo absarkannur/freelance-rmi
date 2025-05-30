@@ -1,0 +1,87 @@
+*{user-select: none;}
+body{padding: 0;margin: 0;}#trigger{cursor: pointer;}
+.ad-body{border: solid 1px #DDD;width: 320px;height: 480px;position: absolute;top: 0;left: 0;right:0;margin:auto;overflow: hidden;}
+
+.full-screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.page1{
+    cursor: pointer;
+}
+
+.page2,.page3{
+    display: none;
+}
+
+.watch_tr{
+    height: 62px;
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.learnmore{
+    height: 47px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+canvas{
+    visibility: hidden;     
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.fource_hide{
+    display: none !important;
+}
+
+.layer{
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    width: 320px;
+    height: 480px;
+    z-index: 99999;
+}
+
+.layer video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 280px;
+    height: 160px;
+}
+
+.close{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 10px;
+    right: 10px;
+    z-index: 99999;
+    cursor: pointer;
+}
