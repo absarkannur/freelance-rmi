@@ -648,4 +648,10 @@
     $(".accordion2 .accordion-item").removeClass("active");
     $(this).addClass("active");
   });
+
+  // Product Filter
+
+  $(".flter-button").click(function () {
+    $(".product-filter-section").toggle();
+  });
 })(jQuery);

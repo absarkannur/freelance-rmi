@@ -149,12 +149,53 @@
     gap: 10px;
 }
 
+.product-filter{
+    background-color: rgb(242, 242, 242);
+    padding: 0 20px;
+    height: 60px;
+    display: none;
+    color: #666;
+}
+
+.product-filter .flter-button{
+    float: right;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.product-filter .flter-button::after{
+    position: absolute;
+    content: 'Filter';
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    left: -40px;
+    font-size: 13px;
+}
+
+
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
 }
 
 /* Mobile */
 @media (max-width: 767px) {
+
+    .product-filter-section{
+        display: none;
+    }
+
+    .product-filter{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
     .proucts-list .product{
         width: calc( 49% - 1% );
         margin-bottom: 0.5%;
