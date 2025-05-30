@@ -138,8 +138,8 @@
 }
 
 .product-filters li{
-    height: 30px;
-    line-height: 30px;
+    line-height: 24px;
+    margin-bottom: 10px;
 }
 
 .product-filters li label{
@@ -158,6 +158,10 @@
     .proucts-list .product{
         width: calc( 49% - 1% );
         margin-bottom: 0.5%;
+    }
+
+    .proucts-list.product-3 .product{
+        width: calc( 49% - 1% );
     }
 
     .proucts-list .product .title-wrap{
