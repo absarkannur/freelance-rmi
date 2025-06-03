@@ -1,0 +1,230 @@
+
+:root{
+    --background-color: #231f20;
+    --text-color: #fff;
+    --white: #fff;
+    --black:#000;
+    --gold: #FFD700;
+}
+
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+html,body{width: 100%;height: 100%;}
+html {scroll-behavior: smooth;}
+body{
+  font-family: "Raleway", sans-serif;
+  background-color: var(--background-color);
+  font-variant-numeric: lining-nums;
+  cursor: url('./../icons/cursor.png'), auto;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a:hover{color: inherit;}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.imagethmb {
+    display: table;
+    text-align: center;
+    width: 100%;
+    font-size: 0;
+}
+
+.imagethmb_inner {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.imagethmb img {
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.visible-hidden{
+    visibility: hidden;
+}
+
+.visible-visible{
+    visibility: visible;
+}
+
+.mobile-view{
+    display: none;
+}
+
+.desktop-view{
+    display: block;
+}
+
+.section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.default-btn{
+  background-color: #ffffff00;
+  height: 2.9em;
+  border-radius: 11px;
+  text-align: right;
+  transition: all 0.6s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.default-btn.full-width{
+  justify-content: center;
+  width: 100%;
+}
+
+.default-btn.dark{
+    color: #333;
+    border: #333 2px solid; 
+}
+.default-btn.light{
+    color: #fff;
+    border: #FFF 2px solid;
+}
+
+.default-btn:hover {
+  cursor: pointer;
+}
+
+.default-btn.dark:hover{
+  background-color: #333;
+  color: #fff;
+}
+.default-btn.light:hover{
+  background-color: #FFF;
+  color: #111;
+}
+
+
+.default-btn svg {
+  width: 1.6em;
+  margin: 0 0.5em 0 0.5em;
+  /* position: absolute; */
+  display: flex;
+  transition: all 0.6s ease;
+}
+
+.default-btn:hover svg {
+  transform: translateX(5px);
+}
+
+.default-btn .text {
+  margin: 0 0.9em
+}
+
+.default-label{
+  height: 20px;
+  line-height: 20px;
+  font-size: 11px;
+}
+
+.default-label.dark{
+  color: #1f1f1f;
+}
+
+.default-label.light{
+  color: #f1f1f1;
+}
+
+.default-input{
+  height: 2.9em;
+  border-radius: 11px;
+  padding: 0 10px;
+  font-size: 13px;
+  background-color: #fff;
+  color: #111;
+  border: solid 1px #111;
+  margin-bottom: 10px;
+}
+
+.default-input.full-width{
+  width: 100%;
+}
+
+.default-textarea{
+  border-radius: 11px;
+  font-size: 13px;
+  padding: 10px;
+  background-color: #fff;
+  color: #111;
+  border: solid 1px #111;
+  margin-bottom: 10px;
+}
+
+.default-textarea.full-width{
+  width: 100%;
+}
+
+.space5{height: 5px;}
+.space10{height: 10px;}
+.space15{height: 15px;}
+.space20{height: 20px;}
+.space25{height: 25px;}
+.space30{height: 30px;}
+.space35{height: 35px;}
+.space40{height: 40px;}
+.space45{height: 45px;}
+.space50{height: 50px;}
+.space55{height: 55px;}
+.space60{height: 60px;}
+.space65{height: 65px;}
+.space70{height: 70px;}
+.space75{height: 75px;}
+.space80{height: 80px;}
+.space85{height: 85px;}
+.space90{height: 90px;}
+.space95{height: 95px;}
+.space100{height: 100px;}
+
+/* Media Query  */
+
+/* Desktop */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+/* Mobile Small Screen */
+@media (max-width: 415px) {
+
+}
