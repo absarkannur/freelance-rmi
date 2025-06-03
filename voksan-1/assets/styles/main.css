@@ -673,8 +673,24 @@
         margin-top: 0px;
     }
 
+    .section-home-about-us .about-info-wrap .title{
+        font-size: 40px;
+    }
+
+    .section-home-invest .header-wrap{
+        height: 200px;
+    }
+
     .section-home-invest .header-wrap .title{
-        font-size: 18px;
+        font-size: 25px;
+    }
+    
+    .section-home-about-us{
+        padding-bottom: 50px;
+    }
+
+    .section-home-contact .bg-image{
+        height: 420px;
     }
 
     .section-home-invest .header-wrap .description{
