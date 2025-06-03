@@ -142,7 +142,7 @@ ul{
 }
 
 .default-btn .text {
-  margin: 0 0.9em
+  margin: 0 0.9em 0 0;
 }
 
 .default-label{

@@ -21,8 +21,9 @@
 }
 
 .header-wrapper .navbar .search-burger-wrap{
+    width: 33.33%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -35,7 +36,7 @@
 }
 
 .header-wrapper .navbar .search-burger-wrap .search-input{
-    margin: 0 50px;
+    margin: 0 20px;
     height: 35px;
     width: 250px;
     padding: 0 30px 0 15px;
@@ -57,7 +58,17 @@
 
 .header-wrapper .navbar-brand{
     position: relative;
+    width: 33.33%;
+    margin: 0;
 }
+
+.header-wrapper .header-compnay-year-logo{
+    width: 33.33%;
+    margin: 0;
+    text-align: center;
+}
+
+
 
 /* .header-wrapper .navbar-brand::after{
     content: '';
@@ -138,7 +149,7 @@
 
 /* Banner Section */
 .banner-wrapper{
-    height: 800px;
+    height: 100vh;
     width: 100%;
     position: fixed;
     top: 0;
@@ -186,9 +197,9 @@
 
 .section-home-about{
     background-image: radial-gradient(circle at 10% 18.333333333333332%, #000000 0%, 20%, rgba(0,0,0,0) 40%), radial-gradient(circle at 10% 86.66666666666667%, rgba(51,51,51,0.99) 0%, 25%, rgba(51,51,51,0) 50%), radial-gradient(circle at 91.66666666666666% 85%, #000000 0%, 42%, rgba(0,0,0,0) 70%), radial-gradient(circle at 88.33333333333333% 15%, #333333 0%, 42%, rgba(51,51,51,0) 70%), radial-gradient(circle at 48.9013671875% 49.521484375%, #FFFFFF 0%, 100%, rgba(255,255,255,0) 100%);
-    /* background-color: #333; */
     clear: both;
     position: relative;
+    margin-top: 100vh;
 }
 
 .section-home-about .about-content{
