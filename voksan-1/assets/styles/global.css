@@ -4,7 +4,7 @@
     --text-color: #fff;
     --white: #fff;
     --black:#000;
-    --gold: #FFD700;
+    --gold: #C9A485;
 }
 
 .libre-baskerville-regular {
@@ -101,6 +101,11 @@ ul{
   justify-content: space-around;
 }
 
+.default-btn.small{
+  height: 2.6em;
+  font-size: 12px;
+}
+
 .default-btn.full-width{
   justify-content: center;
   width: 100%;
@@ -160,7 +165,7 @@ ul{
 }
 
 .default-input{
-  height: 2.9em;
+  height: 3.5em;
   border-radius: 11px;
   padding: 0 10px;
   font-size: 13px;
@@ -209,6 +214,10 @@ ul{
 .space95{height: 95px;}
 .space100{height: 100px;}
 
+.dropdown-menu.show{
+  display: none;
+}
+
 /* Media Query  */
 
 /* Desktop */
@@ -221,6 +230,9 @@ ul{
   .section{
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+  .dropdown-menu.show{
+    display: block;
   }
 }
 

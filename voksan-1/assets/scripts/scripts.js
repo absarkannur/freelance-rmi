@@ -1,6 +1,44 @@
 jQuery(window).trigger("resize").trigger("scroll");
 
 $(function () {
+  // ------------------
+  $(".nav-link.dropdown-toggle").mouseover(function () {
+    $(this)
+      .parent()
+      .find(".cu-dropdown")
+      .find(".image-section")
+      .find(".image")
+      .removeClass("active");
+
+    $(this)
+      .parent()
+      .find(".cu-dropdown")
+      .find(".image-section")
+      .find(".image")
+      .eq(0)
+      .addClass("active");
+  });
+
+  $(".nav-list .nav").mouseover(function () {
+    var index = $(this).index();
+    $(this)
+      .parent()
+      .parent()
+      .parent()
+      .find(".image-section .image")
+      .removeClass("active");
+    $(this)
+      .parent()
+      .parent()
+      .parent()
+      .find(".image-section")
+      .find(".image")
+      .eq(index)
+      .addClass("active");
+  });
+
+  // ------------------
+
   $(".vertical_tabs .tab-wrap").click(function () {
     var index = $(this).index();
 
@@ -17,15 +55,17 @@ $(function () {
 
   // Home Page slider
 
-  var home_owl = $(".home-slider").owlCarousel({
+  var home_owl = $(".journey-slider").owlCarousel({
+    autoWidth: true,
     loop: true,
-    margin: 0,
+    margin: 20,
     nav: false,
     dots: false,
-    items: 1,
     autoplay: true,
-    autoplayTimeout: 2000,
-    autoplayHoverPause: false,
+    autoplayTimeout: 4000,
+    autoplayHoverPause: true,
+    slideTransition: "linear",
+    // smartSpeed: 3000,
   });
 
   $(".js_next").click(function () {

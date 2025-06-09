@@ -24,99 +24,94 @@
     <link rel="stylesheet" href="./assets/styles/global.css?v=55666565" />
     <link rel="stylesheet" href="./assets/styles/main.css?v=55666565" />
 
-    <script src="./assets/scripts/jquery.min.js?v=55666565"></script>
-    <script src="./assets/scripts/parallax.min.js?v=55666565"></script>
-
 </head>
 
 <body>
 
-    <header class="header-wrapper">
-        <nav class="navbar bg-body-tertiary navbar-light fixed-top">
-            <div class="container-fluid">
+    <div class="header-gradient"></div>
 
-                <a class="navbar-brand" href="http://ozonpharma.ae">
-                    <img src="./assets/icons/logo.png" alt="Vakson Development LLC" />
-                </a>
+    <header class="header-wrapper">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
 
                 <div class="header-compnay-year-logo">
                     <img src="./assets/images/header-logo.png" alt="" />
                 </div>
 
-                <div class="search-burger-wrap">
-                    <input class="search-input" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="burger-menu" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assets/icons/logo.png" alt="Vakson Development LLC" />
+                </a>
 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown" id="js_nav">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">New Properties</a>
 
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5> -->
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <!-- <form class="d-flex mt-3" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                        <br> -->
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Properties</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Expertise</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">News</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact Us</a>
-                            </li>
-                        </ul>
+                            <ul class="dropdown-menu mobile-view">
+                                <li><a class="dropdown-item" href="#">All Properties</a></li>
+                                <li><a class="dropdown-item" href="#">Riva Residence</a></li>
+                                <li><a class="dropdown-item" href="#">Four Pearls</a></li>
+                            </ul>
 
-                        <hr>
-
-                        <div class="address">
-                            <h4>Contact Us</h4>
-                            <div class="space20"></div>
-                            <div class="address-wrap">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                                    class="bi bi-building" viewBox="0 0 16 16">
-                                    <path
-                                        d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z" />
-                                    <path
-                                        d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z" />
-                                </svg>
-                                <p>Office 136, Block B, Emarat Atrium Building, Sheikh Zayed Road, Dubai, UAE.</p>
+                            <div class="cu-dropdown">
+                                <div class="nav-section">
+                                    <ul class="nav-list">
+                                        <li class="nav active">All Properties</li>
+                                        <li class="nav">Riva Residence</li>
+                                        <li class="nav">Four Pearls</li>
+                                    </ul>
+                                </div>
+                                <div class="image-section">
+                                    <div class="image active"
+                                        style="background-image: url('./assets/images/nav/properties.jpg');"></div>
+                                    <div class="image" style="background-image: url('./assets/images/nav/riva.jpg');">
+                                    </div>
+                                    <div class="image"
+                                        style="background-image: url('./assets/images/nav/four-pearls.jpg');"></div>
+                                </div>
                             </div>
-                            <div class="address-wrap">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                    class="bi bi-envelope" viewBox="0 0 16 16">
-                                    <path
-                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
-                                </svg>
-                                <p>info@vaksondevelopment.com</p>
-                            </div>
-                            <div class="address-wrap">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                    class="bi bi-telephone" viewBox="0 0 16 16">
-                                    <path
-                                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
-                                </svg>
-                                <p>+971 4 303 9222</p>
-                            </div>
-                        </div>
 
-                    </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">About Us</a>
+
+                            <ul class="dropdown-menu mobile-view">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                            <div class="cu-dropdown">
+                                <div class="nav-section">
+                                    <ul class="nav-list">
+                                        <li class="nav active">Company Profile</li>
+                                        <li class="nav">Our Journey</li>
+                                    </ul>
+                                </div>
+                                <div class="image-section">
+                                    <div class="image active"
+                                        style="background-image: url('./assets/images/nav/profile.jpg');"></div>
+                                    <div class="image"
+                                        style="background-image: url('./assets/images/nav/our_journey.jpg');">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./expertise.html">Expertise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
                 </div>
 
             </div>
@@ -130,28 +125,40 @@
             Your browser does not support the video tag.
         </video>
 
-        <div class="banner-content">
-            <h1 class="title">WE BUILD TO LEAD</h1>
-            <h2 class="sub-title">We craft iconic developments that empower growth and define tomorrow’s skylines.</h2>
-            <button class="default-btn light">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
-                </svg>
-                <div class="text">Learn More</div>
-            </button>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <div class="banner-content">
+                        <h1 class="title">Trusted Since 1970</h1>
+                        <h2 class="sub-title">We craft iconic developments that empower growth and define tomorrow’s
+                            skylines.</h2>
+                        <button class="default-btn dark">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                            </svg>
+                            <div class="text">Read More</div>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
         </div>
+
+
 
     </section>
 
+    <!-- About Group -->
     <section class="section section-home-about">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <div class="about-content">
                         <h3 class="sub-title">At Vakson Group</h3>
-                        <h2 class="title">We don’t just build properties. We build trust, relationships and legacies.
+                        <h2 class="title">We don’t just build properties. <br /> We build <em>trust & legacies.</em>.
                         </h2>
                     </div>
                 </div>
@@ -161,20 +168,60 @@
                     <div class="about-numbers">
                         <ul class="number-list">
                             <li class="list">
+                                <span class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 36 36"
+                                        class="injected-svg"
+                                        data-src="https://static.elfsight.com/icons/app-number-counter-reward.svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path fill-rule="evenodd"
+                                            d="M21.482 2.013c.305-.05.615.05.833.27l2.357 2.39 3 1.503a.952.952 0 0 1 .515.709l.503 3.318 1.544 2.98a.953.953 0 0 1 0 .876l-1.544 2.98-.503 3.319a.952.952 0 0 1-.515.708l-3 1.504-.45.457v10.02a.952.952 0 0 1-1.378.852l-4.674-2.336-4.673 2.336a.952.952 0 0 1-1.378-.851V23.026l-.45-.456-3.001-1.504a.952.952 0 0 1-.515-.708l-.503-3.319-1.543-2.98a.952.952 0 0 1 0-.876l1.543-2.98.503-3.318a.951.951 0 0 1 .515-.709l3-1.504 2.358-2.389a.952.952 0 0 1 .833-.27l3.311.547zm-3.312 22.67-3.311.547a.952.952 0 0 1-.833-.271l-.003-.003v6.551l3.721-1.86a.952.952 0 0 1 .852 0l3.721 1.86v-6.55a.954.954 0 0 1-.835.273l-3.312-.547zm3.135-20.711-2.98.492a.96.96 0 0 1-.31 0l-2.98-.492-2.121 2.15a.95.95 0 0 1-.252.182l-2.7 1.354-.453 2.986a.947.947 0 0 1-.096.295l-1.389 2.682 1.39 2.682c.047.093.08.193.095.296l.453 2.986 2.7 1.353a.949.949 0 0 1 .252.183l.83.84.001.003 1.29 1.307 2.98-.493a.954.954 0 0 1 .31 0l2.98.493 2.122-2.15a.948.948 0 0 1 .251-.183l2.7-1.353.453-2.987a.948.948 0 0 1 .096-.295l1.389-2.682-1.39-2.682a.954.954 0 0 1-.095-.295l-.453-2.986-2.7-1.354a.954.954 0 0 1-.251-.182l-2.122-2.15zM18.17 7.06a6.569 6.569 0 0 1 6.562 6.561 6.569 6.569 0 0 1-6.562 6.561 6.569 6.569 0 0 1-6.56-6.56 6.569 6.569 0 0 1 6.56-6.562zm0 1.904a4.662 4.662 0 0 0-4.657 4.657 4.662 4.662 0 0 0 4.657 4.657 4.662 4.662 0 0 0 4.657-4.657 4.662 4.662 0 0 0-4.657-4.657z">
+                                        </path>
+                                    </svg>
+                                </span>
                                 <span class="value" id="num1">0</span>
-                                <span class="title">YEARS OF EXPERIENCE</span>
+                                <span class="title">Years of Experience</span>
                             </li>
                             <li class="list">
+                                <span class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 36 36"
+                                        class="injected-svg"
+                                        data-src="https://static.elfsight.com/icons/app-number-counter-handshake.svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path fill-rule="evenodd"
+                                            d="M33.865 14.577 28.36 5.472a.938.938 0 0 0-1.18-.373l-3.363 1.477L18.63 5.04a.937.937 0 0 0-.72.079l-5.973 3.303-3.441-2.203a.937.937 0 0 0-1.308.304l-5.054 8.36a.938.938 0 0 0 .299 1.276l2.126 1.356-.43.574a2.628 2.628 0 0 0 2.095 4.2c.05 0 .101-.003.152-.006a2.61 2.61 0 0 0 .98 1.504 2.611 2.611 0 0 0 1.72.52 2.6 2.6 0 0 0 .981 1.504 2.605 2.605 0 0 0 1.72.52c.136.58.467 1.12.981 1.504a2.623 2.623 0 0 0 3.675-.526l.084-.113 3.75 2.668a2.74 2.74 0 0 0 1.594.51 2.752 2.752 0 0 0 2.698-2.186 2.76 2.76 0 0 0 2.757-1.092 2.72 2.72 0 0 0 .512-1.587 2.745 2.745 0 0 0 1.906-1.122 2.71 2.71 0 0 0 .497-1.295 2.757 2.757 0 0 0 2.304-1.14 2.711 2.711 0 0 0 .479-2.043 2.72 2.72 0 0 0-1.114-1.783l-.91-.647 2.572-1.624a.938.938 0 0 0 .302-1.278zM6.83 20.113a.745.745 0 0 1-.494.292.75.75 0 0 1-.707-1.192l1.23-1.64a.75.75 0 0 1 1.2.9l-1.23 1.64zm2.7 2.024a.75.75 0 0 1-1.2-.9l1.23-1.64.865-1.155a.745.745 0 0 1 .494-.293.75.75 0 0 1 .707 1.192l-2.095 2.796zm2.702 2.023a.745.745 0 0 1-.494.293.745.745 0 0 1-.556-.142.745.745 0 0 1-.293-.494.745.745 0 0 1 .142-.556l2.095-2.795.381-.51a.745.745 0 0 1 .602-.3.745.745 0 0 1 .74.644.745.745 0 0 1-.141.556l-2.476 3.304zm3.93.384-1.23 1.64a.75.75 0 0 1-1.2-.9l1.23-1.64a.745.745 0 0 1 .493-.292.75.75 0 0 1 .707 1.192zm15.002-4.329a.85.85 0 0 1-.15.64.88.88 0 0 1-1.224.201l-.678-.483-3.785-2.691a.938.938 0 0 0-1.087 1.528l3.777 2.686a.86.86 0 0 1 .195 1.196.88.88 0 0 1-1.223.2l-.297-.21v-.001l-2.923-2.078a.937.937 0 1 0-1.086 1.528l2.915 2.073a.86.86 0 0 1 .196 1.197.88.88 0 0 1-1.224.2l-1.04-.74-1.573-1.12a.938.938 0 0 0-1.087 1.529l1.546 1.1a.855.855 0 0 1 .16 1.167.881.881 0 0 1-1.222.2l-3.712-2.642.02-.026a2.628 2.628 0 0 0-1.227-4.05c.254-.484.35-1.033.27-1.584a2.608 2.608 0 0 0-1.024-1.729 2.608 2.608 0 0 0-2.24-.438 2.608 2.608 0 0 0-.842-1.076 2.607 2.607 0 0 0-1.947-.498 2.62 2.62 0 0 0-.967.34 2.63 2.63 0 0 0-3.949-.59l-1.524-.973 4.083-6.754 1.776 1.137-1.175.65a.938.938 0 0 0-.482.757 3.735 3.735 0 0 0 .394 1.934 3.78 3.78 0 0 0 5.053 1.667l4.352-2.173 2.207.032 8.348 5.878 2.044 1.455c.19.134.314.334.352.561zm-1.828-3.91-8.073-5.683a.938.938 0 0 0-.526-.171l-2.724-.04H18a.937.937 0 0 0-.419.098l-4.556 2.276a1.9 1.9 0 0 1-2.543-.835 1.867 1.867 0 0 1-.166-.488l8.159-4.512 5.14 1.522c.212.063.44.048.643-.04l2.924-1.285 4.602 7.613-2.447 1.545z">
+                                        </path>
+                                    </svg>
+                                </span>
                                 <span class="value"><em id="num2" style="font-style: normal;">0</em>k</span>
-                                <span class="title">UNITS HANDOVER</span>
+                                <span class="title">Units Handover</span>
                             </li>
                             <li class="list">
+                                <span class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 36 36"
+                                        class="injected-svg"
+                                        data-src="https://static.elfsight.com/icons/app-number-counter-building.svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path fill-rule="evenodd"
+                                            d="M18 4c.264 0 .516.111.693.306l1.71 1.878h8.91c.355 0 .68.2.838.518l3.75 7.496a.938.938 0 0 1-.838 1.357h-.938v13.92h.938a.938.938 0 0 1 0 1.875H2.938a.938.938 0 0 1 0-1.875h.937v-13.92h-.937a.938.938 0 0 1-.839-1.357l3.75-7.496a.937.937 0 0 1 .839-.518h8.91l1.709-1.878A.937.937 0 0 1 18 4zm12.25 11.555H5.75v13.92h11.313v-4.897a.938.938 0 0 1 1.875 0v4.897H30.25v-13.92zm-3.24 8.085c.518 0 .938.42.938.938v1.878a.938.938 0 0 1-1.875 0v-1.878c0-.518.42-.938.937-.938zm-4.505 0c.518 0 .938.42.938.938v1.878a.938.938 0 0 1-1.875 0v-1.878c0-.518.42-.938.937-.938zm-9.01 0c.518 0 .937.42.937.938v1.878a.938.938 0 0 1-1.875 0v-1.878c0-.518.42-.938.938-.938zm-4.505 0c.517 0 .937.42.937.938v1.878a.938.938 0 0 1-1.875 0v-1.878c0-.518.42-.938.938-.938zm18.02-5.902c.518 0 .938.42.938.937v1.879a.938.938 0 0 1-1.875 0v-1.879c0-.517.42-.937.937-.937zm-9.01 0c.518 0 .938.42.938.937v1.879a.938.938 0 0 1-1.875 0v-1.879c0-.517.42-.937.937-.937zm4.505 0c.518 0 .938.42.938.937v1.879a.938.938 0 0 1-1.875 0v-1.879c0-.517.42-.937.937-.937zm-9.01 0c.518 0 .937.42.937.937v1.879a.938.938 0 0 1-1.875 0v-1.879c0-.517.42-.937.938-.937zm-4.505 0c.517 0 .937.42.937.937v1.879a.938.938 0 0 1-1.875 0v-1.879c0-.517.42-.937.938-.937zm19.743-9.679H22.11l5.118 5.621h4.317l-2.812-5.62zM18 6.33l-6.692 7.35h13.384L18 6.33zm-4.11 1.73H7.267l-2.812 5.62h4.317l5.118-5.62z">
+                                        </path>
+                                    </svg>
+                                </span>
                                 <span class="value" id="num3">0</span>
-                                <span class="title">ON GOING PROJECTS</span>
+                                <span class="title">Ongoing Projects</span>
                             </li>
                             <li class="list">
+                                <span class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 36 36"
+                                        class="injected-svg"
+                                        data-src="https://static.elfsight.com/icons/app-number-counter-like.svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path fill-rule="evenodd"
+                                            d="M22.068 5.006c1.328.005 2.494.716 3.12 1.903.535 1.017.66 2.328.363 3.79-.233 1.15-.718 2.379-1.447 3.67h7.082c2.424 0 3.713 2.882 2.094 4.688 1.394 1.555.66 4.039-1.356 4.588a2.813 2.813 0 0 1-1.874 3.75 2.815 2.815 0 0 1-2.614 3.849h-4.383c-3.396 0-6.658-1-9.806-1.875H12.15a2.817 2.817 0 0 1-2.65 1.875H2.937A.937.937 0 0 1 2 30.306V13.432c0-.518.42-.937.937-.937H9.5c1.222 0 2.264.784 2.65 1.875h2.811c3.58-2.47 4.087-4.814 4.459-6.535.154-.717.288-1.336.622-1.845.429-.653 1.106-.984 2.013-.984zM9.5 14.37H3.875v14.999H9.5c.516 0 .937-.42.937-.938V15.307a.938.938 0 0 0-.937-.937zm12.56-7.49c-.468-.001-.517-.002-.809 1.35-.396 1.835-1.06 4.907-5.483 7.856a.936.936 0 0 1-.515.158s-1.507-.013-2.942-.013v11.274c1.17 0 1.154-.022 1.313.022 3.076.853 6.264 1.84 9.428 1.84h4.383a.939.939 0 0 0 0-1.874H26.5a.937.937 0 0 1 0-1.875h2.812a.938.938 0 0 0 0-1.875H26.5a.937.937 0 0 1 0-1.875h4.687a.938.938 0 0 0 0-1.875H26.5a.937.937 0 1 1 0-1.875h4.687a.938.938 0 0 0 0-1.874h-8.77a.938.938 0 0 1-.775-1.465c2.914-4.285 2.181-6.438 1.887-6.996-.305-.58-.826-.9-1.467-.903zM7.625 25.62a.937.937 0 1 1 0 1.875.937.937 0 0 1 0-1.875z">
+                                        </path>
+                                    </svg>
+                                </span>
                                 <span class="value" id="num4">0</span>
-                                <span class="title">COMPLETED PROJECTS</span>
+                                <span class="title">Completed Projects</span>
                             </li>
                         </ul>
                     </div>
@@ -183,177 +230,323 @@
         </div>
     </section>
 
-    <section class="section-home-latest-project">
-        <div class="property-info-wrap">
-            <h2 class="title">Riva Residences</h2>
-            <h3 class="sub-title">Modern Waterfront Living Redefined</h3>
-            <p class="description">Experience the elegance of coastal living at Riva Residences, where contemporary
-                design meets serene waterfront views. Nestled in a prime location of Dubai.</p>
-
-            <ul class="amenities_list">
-                <li class="list">
-                    <img src="./assets/images/prop/Waterfront-with-panoramic-views.png" alt="" />
-                    <span class="title">Waterfront with panoramic views</span>
-                </li>
-                <li class="list">
-                    <img src="./assets/images/prop/Smart-home-features.png" alt="" />
-                    <span class="title">Smart home features</span>
-                </li>
-                <li class="list">
-                    <img src="./assets/images/prop/Exclusive-access-to-private_beach.png" alt="" />
-                    <span class="title">Exclusive access to private beach</span>
-                </li>
-                <li class="list">
-                    <img src="./assets/images/prop/Resort-style-wellness-spaces.png" alt="" />
-                    <span class="title">Resort-style wellness spaces</span>
-                </li>
-            </ul>
-
-            <div class="button-wrap">
-                <button class="default-btn light">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
-                    </svg>
-                    <span class="text">Explore More</span>
-                </button>
-                <button class="default-btn light">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                        class="bi bi-telephone" viewBox="0 0 16 16">
-                        <path
-                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
-                    </svg>
-                    <span class="text">Schedule Call</span>
-                </button>
-            </div>
-
-        </div>
-        <div class="property-slider-wrap">
-            <div class="home-slider owl-carousel owl-theme">
-                <img src="./assets/images/slider-image/slide-1.jpg" alt="" />
-                <img src="./assets/images/slider-image/slide-2.jpg" alt="" />
-            </div>
-
-            <span class="next js_next">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                    class="bi bi-arrow-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-                </svg>
-            </span>
-            <span class="prev js_prev">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                    class="bi bi-arrow-left" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
-                </svg>
-            </span>
-
-        </div>
-    </section>
-
-    <section class="section section-home-about-us">
+    <section class="section-home-latest-project" id="project_1">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
-                    <div class="about-bg-banner">
-                        <img src="./assets/images/about-us-bg.jpg" alt="">
+                <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                    <div class="property-info-wrap">
+                        <h2 class="title">Riva Residences</h2>
+                        <h3 class="sub-title">Modern Waterfront Living Redefined</h3>
+                        <p class="description">Experience the elegance of coastal living at Riva Residences, where
+                            contemporary
+                            design meets serene waterfront views. Nestled in a prime location of Dubai.</p>
+
+                        <ul class="amenities_list">
+                            <li class="list">
+                                <img src="./assets/images/prop/water-waves-C_edited_edited.png" alt="" />
+                                <span class="title">Waterfront with panoramic views</span>
+                            </li>
+                            <li class="list">
+                                <img src="./assets/images/prop/beach-C_edited_edited.png" alt="" />
+                                <span class="title">Smart home features</span>
+                            </li>
+                            <li class="list">
+                                <img src="./assets/images/prop/home-security-C_edited_edited.png" alt="" />
+                                <span class="title">Exclusive access to private beach</span>
+                            </li>
+                            <li class="list">
+                                <img src="./assets/images/prop/employee-C_edited_edited.png" alt="" />
+                                <span class="title">Resort-style wellness spaces</span>
+                            </li>
+                        </ul>
+
+                        <div class="button-wrap">
+                            <button class="default-btn small dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                                </svg>
+                                <span class="text">Check Availability</span>
+                            </button>
+                            <button class="default-btn small dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                                </svg>
+                                <span class="text">View floor plan</span>
+                            </button>
+                            <button class="default-btn small dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                                </svg>
+                                <span class="text">View Video</span>
+                            </button>
+                        </div>
+
                     </div>
-                    <div class="about-info-wrap">
-                        <h2 class="title">About Us</h2>
-                        <p class="description">Since our inception in 1970, Vakson Group has been part of the UAE’s
-                            remarkable
-                            transformation into a global hub. From the early days of building residential communities to
-                            shaping commercial landmarks and expanding into strategic investments, our journey has been
-                            defined by resilience, adaptability, and a commitment to excellence.</p>
-                        <button class="default-btn dark">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
-                            </svg>
-                            <span class="text">Explore More</span>
-                        </button>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7"></div>
+            </div>
+        </div>
+        <div class="bg-layer" id="bg_layer" style="background-image: url('./assets/images/riva.jpg');"></div>
+    </section>
+
+    <section class="section section-home-project-locaion">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>Convenient Location</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="image-wrap">
+                        <img src="./assets/images/locations/map-1.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section-home-invest">
-        <div class="parallax-window" data-parallax="scroll">
-            <div class="header-wrap">
-                <h3 class="title">INVEST IN THE CITY OF POSSIBILITIES.</h3>
-                <p class="description">Have a question or ready to invest in your next dream house with Vakson Group?
-                    Whether you’re looking
-                    for expert real estate services, investment opportunities, or property management solutions, we’re
-                    here to help.</p>
+    <section class="section-home-latest-project" id="project_2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                    <div class="property-info-wrap">
+                        <h2 class="title light">Four Pearls</h2>
+                        <h3 class="sub-title light">Modern Waterfront Living Redefined</h3>
+                        <p class="description light">Experience the elegance of coastal living at Riva Residences, where
+                            contemporary
+                            design meets serene waterfront views. Nestled in a prime location of Dubai.</p>
+
+                        <ul class="amenities_list">
+                            <li class="list">
+                                <img src="./assets/images/prop/water-waves-C_edited_edited_edited.png" alt="" />
+                                <span class="title light">Waterfront with panoramic views</span>
+                            </li>
+                            <li class="list">
+                                <img src="./assets/images/prop/beach-C_edited_edited_edited.png" alt="" />
+                                <span class="title light">Smart home features</span>
+                            </li>
+                            <li class="list">
+                                <img src="./assets/images/prop/home-security-C_edited_edited_edited.png" alt="" />
+                                <span class="title light">Exclusive access to private beach</span>
+                            </li>
+                            <li class="list">
+                                <img src="./assets/images/prop/employee-C_edited_edited_edited.png" alt="" />
+                                <span class="title light">Resort-style wellness spaces</span>
+                            </li>
+                        </ul>
+
+                        <div class="button-wrap">
+                            <button class="default-btn small light">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                                </svg>
+                                <span class="text">Check Availability</span>
+                            </button>
+                            <button class="default-btn small light">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                                </svg>
+                                <span class="text">View floor plan</span>
+                            </button>
+                            <button class="default-btn small light">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                                </svg>
+                                <span class="text">View Video</span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7"></div>
+            </div>
+        </div>
+        <div class="bg-layer" id="bg_layer" style="background-image: url('./assets/images/pearl.jpeg');"></div>
+    </section>
+
+    <section class="section section-home-project-locaion" style="background-color: #363437;">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>Convenient Location</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="image-wrap">
+                        <img src="./assets/images/locations/map-2.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <script>
-        $(".parallax-window").parallax({
-            imageSrc: "./assets/images/invest-bg.jpg",
-            zIndex: 1,
-            speed: 0.2,
-            bleed: 50,
-            overScrollFix: true
-        });
-    </script>
 
-    <section class="section-home-contact">
-        <div class="bg-image" style="background-image: url('./assets/images/about.jpg');"></div>
+    <section class="section section-home-journey-us">
         <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
+                    <h3 class="sub-title">50+ Years of Proven Excellence</h3>
+                    <h2 class="title">A trusted name with a legacy of <em>successful projects</em> across the UAE.</h2>
+                </div>
+            </div>
+            <div class="space60">&nbsp;</div>
+        </div>
+        <div class="container-fluid">
             <div class="row">
-                <div class="col contact-wrap">
-                    <h2 class="title">Contact Us</h2>
-                    <p class="description">Get in touch with our team today and discover how Vakson can turn your vision
-                        into reality.</p>
-                    <form action="">
-                        <label for="" class="default-label light">Full Name</label>
-                        <input class="default-input full-width" type="text" />
+                <div class="col">
+                    <div class="journey-slider owl-carousel owl-theme">
 
-                        <div class="row">
-                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                                <label for="" class="default-label light">Email</label>
-                                <input class="default-input full-width" type="text" />
+                        <div class="journey-item">
+                            <div class="image-wrap">
+                                <img src="./assets/images/journey/Warehouse Complex, Al Quoz, Dubai.JPG" alt="" />
                             </div>
-                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                                <label for="" class="default-label light">Phone</label>
-                                <input class="default-input full-width" type="text" placeholder="e.g.: 04 303 9222" />
+                            <div class="content-wrap">
+                                <span class="title">Warehouse Complex</span>
+                                <span class="location">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                                    </svg>
+                                    <em>Al Quoz, Dubai</em>
+                                </span>
+                                <span class="desc">A Milestone in Vakson’s Legacy, Pioneering Industrial Excellence with
+                                    Enduring Impact, Efficiency, and Strategic Vision</span>
+                                <span class="year">1970</span>
                             </div>
                         </div>
 
-                        <label for="" class="default-label light">Message</label>
-                        <textarea class="default-textarea full-width" name="" placeholder="Message"></textarea>
-                        <div class="space20"></div>
-                        <button class="default-btn light full-width">
-                            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
-                            </svg> -->
-                            <div class="text">Send</div>
-                        </button>
-                    </form>
+                        <div class="journey-item">
+                            <div class="image-wrap">
+                                <img src="./assets/images/journey/Villa Complex Jumeirah 1, Dubai.jpg" alt="" />
+                            </div>
+                            <div class="content-wrap">
+                                <span class="title">Villa Complex</span>
+                                <span class="location">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                                    </svg>
+                                    <em>Jumeirah 1, Dubai</em>
+                                </span>
+                                <span class="desc">Vakson’s Pioneering Vision in Luxury Living, Redefining Elegance &
+                                    Exclusivity</span>
+                                <span class="year">1970</span>
+                            </div>
+                        </div>
+
+                        <div class="journey-item">
+                            <div class="image-wrap">
+                                <img src="./assets/images/journey/Residential Building, Karama, Dubai.JPG" alt="" />
+                            </div>
+                            <div class="content-wrap">
+                                <span class="title">Residential Building</span>
+                                <span class="location">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                                    </svg>
+                                    <em>Karama, Dubai</em>
+                                </span>
+                                <span class="desc">Vakson’s Landmark in Urban Residential Architecture, Showcasing
+                                    Prestige & Excellence</span>
+                                <span class="year">1970</span>
+                            </div>
+                        </div>
+
+                        <div class="journey-item">
+                            <div class="image-wrap">
+                                <img src="./assets/images/journey/Residential Building, Bur Dubai, Dubai.JPG" alt="" />
+                            </div>
+                            <div class="content-wrap">
+                                <span class="title">Residential Building</span>
+                                <span class="location">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                                    </svg>
+                                    <em>Bur Dubai, Dubai</em>
+                                </span>
+                                <span class="desc">Vakson’s Trailblazing Urban Landmark, Elevating Comfort, Convenience
+                                    & Excellence</span>
+                                <span class="year">1970</span>
+                            </div>
+                        </div>
+
+                        <div class="journey-item">
+                            <div class="image-wrap">
+                                <img src="./assets/images/journey/Residential Building Karama, Dubai.JPG" alt="" />
+                            </div>
+                            <div class="content-wrap">
+                                <span class="title">Residential Building</span>
+                                <span class="location">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                                    </svg>
+                                    <em>Karama, Dubai</em>
+                                </span>
+                                <span class="desc">Vakson’s Visionary Role in Urban Excellence, Redefining Quality and
+                                    InnovationResidential Building Al Rolla, Dubai
+                                </span>
+                                <span class="year">1970</span>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section-home-google-map">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.406402735623!2d55.253761175064!3d25.189513677715915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69d8f90a2795%3A0xf1ecba76ab2b859e!2sVakson%20Real%20Estate%20LLC!5e0!3m2!1sen!2sin!4v1748779001168!5m2!1sen!2sin"
-            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section class="section section-home-presale">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">Exclusice <em>Pre-Sale</em> Now Open!</h3>
+                    <h4 class="description">Please provide us the email if where these pre-sales request can be
+                        submitted.</h4>
+                </div>
+            </div>
+            <div class="space20"></div>
+            <div class="row justify-content-md-center">
+                <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                    <div class="form">
+                        <input class="default-input" type="email" placeholder="Email Address" required />
+                        <button class="default-btn light">&nbsp;&nbsp;Submit&nbsp;&nbsp;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <div class="section-home-footer-video" id="footer_video">
+        <video class="footer-video" id="video" poster="./assets/images/footer-layer.jpg" muted autoplay loop>
+            <source src="./assets/images/footer-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 
     <!-- Footer -->
     <footer class="section footer-wrapper">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
                     <ul class="footer-nav">
@@ -367,14 +560,29 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2">
                     <ul class="footer-nav">
                         <li class="item title">Quick Links</li>
-                        <li class="item">Compay</li>
-                        <li class="item">Profile</li>
-                        <li class="item">Journy</li>
-                        <li class="item">Team</li>
-                        <li class="item">Our Values</li>
+                        <li class="item">About Us</li>
+                        <li class="item">Properties</li>
+                        <li class="item">Expertise</li>
+                        <li class="item">News</li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2">
+                    <ul class="footer-nav">
+                        <li class="item title">Properties</li>
+                        <li class="item">Riva Residence</li>
+                        <li class="item">Four Pearls</li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2">
+                    <ul class="footer-nav">
+                        <li class="item title">Media Center</li>
+                        <li class="item">PR</li>
+                        <li class="item">Blogs</li>
+                        <li class="item">News</li>
+                        <li class="item">Interviews</li>
                     </ul>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
@@ -384,11 +592,7 @@
                         </li>
                         <li class="item">info@vaksondevelopment.com</li>
                         <li class="item">+971 4 303 9222</li>
-                    </ul>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
-                    <ul class="footer-nav">
-                        <li class="item title">social media</li>
+                        <li class="item">&nbsp;</li>
                         <li class="item">
                             <ul class="social-list">
                                 <li class="list">
@@ -439,10 +643,10 @@
                 </svg>
             </li>
             <li class="social-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-twitter"
-                    viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                    class="bi bi-linkedin" viewBox="0 0 16 16">
                     <path
-                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
                 </svg>
             </li>
             <li class="social-link">
@@ -452,9 +656,17 @@
                         d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
                 </svg>
             </li>
+            <li class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-youtube"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                </svg>
+            </li>
         </ul>
     </div>
 
+    <script src="./assets/scripts/jquery.min.js?v=55666565"></script>
     <script src="./assets/scripts/bootstrap.bundle.min.js"></script>
     <script src="./assets/scripts/owl.carousel.min.js"></script>
 

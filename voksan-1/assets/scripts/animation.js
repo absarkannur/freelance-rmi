@@ -23,7 +23,68 @@ jQuery(document).ready(function ($) {
     }
   }
 
+  // Latest Project Zoom Style ---------------
+  TweenMax.set("#project_1 #bg_layer", { backgroundSize: "125% 125%" });
+
+  var zoomTween = TweenMax.to("#project_1 #bg_layer", 0.5, {
+    backgroundSize: "100% 100%",
+    ease: Linear.easeNone,
+  });
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement: "#project_1",
+    duration: 400,
+  })
+    .setTween(zoomTween)
+    .addTo(controller);
+
   // ------------------
+
+  // Latest Project Zoom Style ---------------
+  TweenMax.set("#project_2 #bg_layer", { backgroundSize: "125% 125%" });
+
+  var zoomTween = TweenMax.to("#project_2 #bg_layer", 0.5, {
+    backgroundSize: "100% 100%",
+    ease: Linear.easeNone,
+  });
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement: "#project_2",
+    duration: 400,
+  })
+    .setTween(zoomTween)
+    .addTo(controller);
+
+  // ------------------------
+
+  // Footer Video -----------
+  // TweenMax.set("#footer_video #video", { translateY: 0 });
+
+  var footerTween = TweenMax.to("#footer_video #video", 0.5, {
+    transform: "translate3d(0,-100px,0)",
+    percentY: 100,
+    ease: Linear.easeNone,
+  });
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement: "#footer_video",
+    duration: 400,
+  })
+    .setTween(footerTween)
+    .addTo(controller);
+
+  //---
+  //---
+  //---
+
+  $(window).scroll(function () {
+    var scroll = $(this).scrollTop();
+    if (scroll > 100) {
+      $(".header-wrapper .navbar").addClass("gray");
+    } else {
+      $(".header-wrapper .navbar").removeClass("gray");
+    }
+  });
 
   // Window Scroll animation
   $(window).scroll(function () {
@@ -35,11 +96,5 @@ jQuery(document).ready(function ($) {
       "transform",
       "translateY(-" + shiftDistance + "px)"
     );
-
-    if (scroll > 100) {
-      $(".header-wrapper .navbar").addClass("gray");
-    } else {
-      $(".header-wrapper .navbar").removeClass("gray");
-    }
   });
 });
