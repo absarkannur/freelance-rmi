@@ -1,6 +1,7 @@
 jQuery(document).ready(function ($) {
   var controller = new ScrollMagic.Controller();
   var countWidget = false;
+  var locationCountWidget = false;
 
   new ScrollMagic.Scene({
     triggerElement: ".section-home-about",
@@ -22,6 +23,30 @@ jQuery(document).ready(function ($) {
       countWidget = true;
     }
   }
+
+  // ----------------------
+
+  new ScrollMagic.Scene({
+    triggerElement: ".section-home-project-locaion",
+    triggerHook: 0.4,
+  })
+    .on("start", function () {
+      locationCountSection();
+    })
+
+    // .addIndicators()
+    .addTo(controller);
+
+  function locationCountSection() {
+    if (locationCountWidget == false) {
+      var count1 = new ClientPlus("#l_num1", 20, 1500);
+      var count2 = new ClientPlus("#l_num2", 15, 1500);
+      var count3 = new ClientPlus("#l_num3", 5, 1500);
+      locationCountWidget = true;
+    }
+  }
+
+  // ----------------------
 
   // Latest Project Zoom Style ---------------
   TweenMax.set("#project_1 #bg_layer", { backgroundSize: "125% 125%" });

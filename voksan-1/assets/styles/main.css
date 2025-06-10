@@ -182,6 +182,11 @@
     color: var(--gold);
 }
 
+.header-wrapper .navbar .cu-dropdown .nav-section .nav-list .nav a{
+    display: block;
+    width: 100%;
+    height: 45px;
+}
 
 
 /* --------------- */
@@ -359,7 +364,7 @@
 .section-home-latest-project .property-info-wrap  .description{
     color: #3e2b24;
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 .section-home-latest-project .property-info-wrap .amenities_list{
@@ -419,7 +424,36 @@
 }
 
 .section-home-project-locaion .image-wrap img{
+    /* width: 100%; */
     height: 100%;
+}
+
+.section-home-project-locaion .near-by-locations{
+    clear: both;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-home-project-locaion .near-by-locations .list{
+    text-align: center;
+    width: 33.33%;
+    color: #f1ecea;
+}
+
+.section-home-project-locaion .near-by-locations .list h3{
+    font-family: "Libre Baskerville", serif;
+    font-size: 40px;
+    font-style: italic;
+    height: 75px;
+    line-height: 75px;
+}
+
+.section-home-project-locaion .near-by-locations .list p{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-size: 13px;
 }
 
 /* Home About Us */
@@ -462,13 +496,18 @@
 }
 
 .section-home-journey-us .journey-slider .journey-item .image-wrap{
+    background-color: #333333;
     overflow: hidden;
-    /* height: 450px; */
+    height: 280px;
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
+}
+
+.section-home-journey-us .journey-slider .journey-item .image-wrap .imagethmb_inner{
+    height: 280px;
 }
 
 /* .section-home-journey-us .journey-slider .journey-item .image-wrap img{
@@ -489,6 +528,24 @@
     display: block;
     color: var(--white);
 }
+
+.section-home-journey-us .journey-slider .journey-item .content-wrap .launched,
+.section-home-journey-us .journey-slider .journey-item .content-wrap .handover{
+    display: block;
+    color: var(--gold);
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    float: left;
+    width: 50%;
+}
+
+/* .section-home-journey-us .journey-slider .journey-item .content-wrap .launched{
+    color: #f1ecea;
+}
+.section-home-journey-us .journey-slider .journey-item .content-wrap .handover{
+    color: #f1ecea;
+} */
 
 
 .section-home-journey-us .journey-slider .journey-item .content-wrap .year{
@@ -698,6 +755,7 @@
 
 .footer-wrapper{
     background-color: #3c3a3e;
+    overflow: hidden;
 }
 
 .footer-wrapper .footer-nav{
@@ -708,17 +766,19 @@
 }
 
 .footer-wrapper .footer-nav .item{
-    color: var(--text-color);
+    color: #f1ecea;
     margin-bottom: 10px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .footer-wrapper .footer-nav .item.title{
-    font-size: 24px;
+    font-size: 18px;
     text-transform: uppercase;
     height: 40px;
     line-height: 40px;
+    color: var(--gold);
+    font-weight: 500;
 }
 
 .footer-wrapper .footer-nav .item .description{
@@ -734,13 +794,45 @@
 
 .footer-wrapper .footer-nav .item .social-list .list{
     margin-right: 10px;
+    color: var(--gold);
 }
+
+.footer-wrapper .footer-nav .item .form{
+    display: flex;
+}
+
+.footer-wrapper .footer-nav .item .form input{
+    width: 70%;
+    margin-right: 10px;
+}
+
+.footer-wrapper .footer-nav .item .label{
+    font-size: 12px;
+}
+
+.footer-wrapper .footer-seperator{
+    position: relative;   
+}
+
+.footer-wrapper .footer-seperator::after{
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 130%;
+    left: -50px;
+    background-color: var(--gold);
+}
+
+
+/* ============================================================= */
+/* ============================================================= */
+/* ============================================================= */
 
 /* Inner Page Styles */
 
 .inner-page-banner{
+    position: relative;
     margin-top: 100px;
-    /* background-color: green; */
     height: 400px;
 }
 
@@ -915,6 +1007,522 @@
     background: transparent !important;
     color: var(--gold) !important;
 }
+
+/* Our Profile */
+
+.section-inner-profile-overview{
+    background-color: #3c3a3e;
+    height: 200px;
+}
+
+.section-inner-profile-overview .title{
+    font-family: "Libre Baskerville", serif;
+    font-size: 60px;
+    font-style: italic;
+    color: var(--gold);
+}
+
+.section-inner-profile-overview .content{
+    color: #f1ecea;
+    font-size: 16px;
+}
+
+.section-inner-profile-overview .flex{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.section-inner-profile-vm{
+  background-image: radial-gradient(circle at 94.16666666666667% 10.833333333333334%, #3C3A3E 0%, 17.5%, rgba(60,58,62,0) 35%), radial-gradient(circle at 92.5% 87.5%, #1B1A19 0%, 20%, rgba(27,26,25,0) 40%), radial-gradient(circle at 6.503906249999999% 88.037109375%, rgba(60,58,62,0.99) 0%, 25%, rgba(60,58,62,0) 50%), radial-gradient(circle at 6.666666666666667% 10.833333333333334%, #1B1A19 0%, 42%, rgba(27,26,25,0) 70%), radial-gradient(circle at 93.6865234375% 11.42578125%, #1B1A19 0%, 42%, rgba(27,26,25,0) 70%), radial-gradient(circle at 48.9013671875% 49.521484375%, #F1ECEA 0%, 100%, rgba(241,236,234,0) 100%);  
+}
+
+.section-inner-profile-vm .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.section-inner-profile-vm .vision-wrap,
+.section-inner-profile-vm .mission-wrap{
+    height: 250px;
+    background-color: #3c3a3e;
+    color: #f1ecea;
+    padding: 30px;
+    text-align: center;
+    font-size: 14px;
+    transition-duration: 0.2s;
+}
+
+.section-inner-profile-vm .vision-wrap h3,
+.section-inner-profile-vm .mission-wrap h3{
+    font-family: "Libre Baskerville", serif;
+    font-size: 40px;
+    color: var(--gold);
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition-duration: 0.5s;
+}
+
+.section-inner-profile-vm .vision-wrap:hover,
+.section-inner-profile-vm .mission-wrap:hover{
+    position: relative;
+    transform: translateY(-10px);
+}
+
+.section-inner-profile-vm .vision-wrap:hover h3,
+.section-inner-profile-vm .mission-wrap:hover h3{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.section-inner-profile-corevalue-header{
+    height: 200px;
+    width: 100%;
+    background-image: url('./../images/corevalue-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-inner-profile-corevalue-header .title{
+    font-family: "Libre Baskerville", serif;
+    font-size: 56px;
+    color: #3c3a3e;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.section-inner-profile-corevalue{
+    background-image: radial-gradient(circle at 94.16666666666667% 10.833333333333334%, #3C3A3E 0%, 17.5%, rgba(60,58,62,0) 35%), radial-gradient(circle at 92.5% 87.5%, #1B1A19 0%, 20%, rgba(27,26,25,0) 40%), radial-gradient(circle at 6.503906249999999% 88.037109375%, rgba(60,58,62,0.99) 0%, 25%, rgba(60,58,62,0) 50%), radial-gradient(circle at 6.666666666666667% 10.833333333333334%, #1B1A19 0%, 42%, rgba(27,26,25,0) 70%), radial-gradient(circle at 93.6865234375% 11.42578125%, #1B1A19 0%, 42%, rgba(27,26,25,0) 70%), radial-gradient(circle at 48.9013671875% 49.521484375%, #F1ECEA 0%, 100%, rgba(241,236,234,0) 100%);  
+
+}
+
+.section-inner-profile-corevalue .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.section-inner-profile-corevalue .core-values{
+    background-color: #3c3a3e;
+    padding: 50px;
+    text-align: center;
+    transition-duration: 0.4s;
+}
+
+.section-inner-profile-corevalue .core-values h3{
+    font-family: "Libre Baskerville", serif;
+    font-style: italic;
+    font-size: 30px;
+    color: var(--gold);
+    margin-bottom: 30px;
+}
+
+.section-inner-profile-corevalue .core-values p{
+    color: #f1ecea;
+}
+
+.section-inner-profile-corevalue .core-values:hover{
+    /* transform: translateZ(20px 20px); */
+    transform: scale(1.06);
+}
+
+/* Our Journey */
+
+.our-jounery-video{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.journey-banner-header{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.journey-banner-header h1{
+    font-family: "Libre Baskerville", serif;
+    font-size: 90px;
+    font-style: italic;
+    color: #fff;
+}
+
+.journey-banner-header h2{
+    font-family: "Libre Baskerville", serif;
+    font-size: 25px;
+    color: #fff;
+}
+
+.section-inner-our-jounery{
+    background-image: radial-gradient(circle at 94.16666666666667% 10.833333333333334%, #3C3A3E 0%, 17.5%, rgba(60,58,62,0) 35%), radial-gradient(circle at 92.5% 87.5%, #1B1A19 0%, 20%, rgba(27,26,25,0) 40%), radial-gradient(circle at 6.503906249999999% 88.037109375%, rgba(60,58,62,0.99) 0%, 25%, rgba(60,58,62,0) 50%), radial-gradient(circle at 7.5% 13.333333333333334%, #000000 0%, 42%, rgba(0,0,0,0) 70%), radial-gradient(circle at 93.6865234375% 11.42578125%, #3C3A3E 0%, 42%, rgba(60,58,62,0) 70%), radial-gradient(circle at 48.9013671875% 49.521484375%, #F1ECEA 0%, 100%, rgba(241,236,234,0) 100%);
+}
+
+.section-inner-our-jounery .jounery-list{
+    width: 100%;
+    /* overflow: hidden; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.section-inner-our-jounery .jounery-list .list{
+    flex: 1 1 30%;
+    transition-duration: 0.5s;
+    position: relative;
+}
+
+.section-inner-our-jounery .jounery-list .list:hover{
+    transform: scale(1.08);
+}
+
+.section-inner-our-jounery .jounery-list .list .image-wrap{
+    background-color: #3c3a3e;
+    height: 300px;
+    overflow: hidden;
+}
+
+.section-inner-our-jounery .jounery-list .list .image-wrap .imagethmb{
+    height: 300px;
+}
+
+.section-inner-our-jounery .jounery-list .list .content-wrap{
+    background-color: #3c3a3e;
+    padding: 20px;
+    height: 150px;
+}
+
+.section-inner-our-jounery .jounery-list .list .content-wrap .year{
+    display: none;
+    margin: 0;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    color: #f1ecea;
+}
+.section-inner-our-jounery .jounery-list .list .content-wrap .title{
+    font-family: "Libre Baskerville", serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #f1ecea;
+    margin: 0;
+}
+.section-inner-our-jounery .jounery-list .list .content-wrap .location{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+    font-size: 12px;
+    color: #f1ecea;
+    font-weight: bold;
+    text-shadow: 0 0 3px #000;
+}
+.section-inner-our-jounery .jounery-list .list .content-wrap .description{
+    display: block;
+    color: #f1ecea;
+    font-size: 13px;
+}
+
+.section-inner-our-jounery .jounery-list .list .content-wrap .launched,
+.section-inner-our-jounery .jounery-list .list .content-wrap .handover{
+        display: block;
+    color: #f1ecea;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    width: 50%;
+    float: left;
+}
+
+.section-inner-our-jounery-excellence{
+    padding: 60px 0;
+    background-color: #3c3a3e;
+    text-align: center;
+}
+
+.section-inner-our-jounery-excellence .title{
+    font-family: "Libre Baskerville", serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 43px;
+    height: 80px;
+    line-height: 80px;
+    color: var(--gold);
+}
+
+.section-inner-our-jounery-excellence .desc{
+    font-size: 14px;
+    color: #f1ecea;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.section-inner-our-jounery-excellence-list{
+    background-image: radial-gradient(circle at 94.16666666666667% 10.833333333333334%, #3C3A3E 0%, 17.5%, rgba(60,58,62,0) 35%), radial-gradient(circle at 92.5% 87.5%, #1B1A19 0%, 20%, rgba(27,26,25,0) 40%), radial-gradient(circle at 6.503906249999999% 88.037109375%, rgba(60,58,62,0.99) 0%, 25%, rgba(60,58,62,0) 50%), radial-gradient(circle at 6.666666666666667% 10.833333333333334%, #1B1A19 0%, 42%, rgba(27,26,25,0) 70%), radial-gradient(circle at 93.6865234375% 11.42578125%, #1B1A19 0%, 42%, rgba(27,26,25,0) 70%), radial-gradient(circle at 48.9013671875% 49.521484375%, #F1ECEA 0%, 100%, rgba(241,236,234,0) 100%);
+}
+
+.section-inner-our-jounery-excellence-list .list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.section-inner-our-jounery-excellence-list .list .item{
+    height: 300px;
+    width: 250px;
+    float: left;
+    margin-bottom: 30px;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: all 0.4s ease-in-out;
+}
+
+.section-inner-our-jounery-excellence-list .list .item:hover{
+    background-size: 110%;
+}
+
+.section-inner-our-jounery-excellence-list .list .item .title{
+    display: block;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background-color: #f1ecea;
+    padding: 0 10px;
+    position: absolute;
+    bottom: -15px;
+    left: 15px;
+    text-align: center;
+    font-size: 17px;
+}
+
+
+/* All Properties Page */
+
+.section-inner-all-properties .properties_list{
+    clear: both;
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; */
+}
+
+.section-inner-all-properties .properties_list .property{
+    height: 500px;
+    width: 23%;
+    background-color: #f1ecea;
+    overflow: hidden;
+    cursor: pointer;
+    float: left;
+    margin: 1%;
+}
+
+.section-inner-all-properties .properties_list .property .image-wrap{
+    position: relative;
+    background-color: #000000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    top: 0px;
+    transition: all 0.4s ease-in-out;
+}
+.section-inner-all-properties .properties_list .property .content-wrap{
+    text-align: center;
+    height: 100px;
+    padding-top: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+.section-inner-all-properties .properties_list .property:hover .content-wrap{
+    padding-top: 0px;
+}
+
+.section-inner-all-properties .properties_list .property:hover .content-wrap .view-more{
+    display: block;
+}
+
+.section-inner-all-properties .properties_list .property:hover .image-wrap{
+    top: -20px;
+    height: 380px;
+}
+
+
+.section-inner-all-properties .properties_list .property .content-wrap .title{
+    font-family: "Libre Baskerville", serif;
+    color: #3e2b24;
+    font-size: 18px;
+}
+
+.section-inner-all-properties .properties_list .property .content-wrap .status{
+    font-size: 14px;
+    font-style: italic;
+}
+
+.section-inner-all-properties .properties_list .property .content-wrap .view-more{
+    display: none;
+    height: 40px;
+    line-height: 40px;
+    width: 140px;
+    background-color: #A29F9F;
+    color: #f1ecea;
+    text-align: center;
+    margin: 5px 0;
+    transition: all 0.4s ease-in-out;
+    margin: 5px auto;
+}
+
+.section-inner-all-properties .properties_list .property .content-wrap .view-more:hover{
+    background-color: #3C3A3E;
+}
+
+/* Property Inner Page */
+.property-video{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 80% 70%;
+    position: relative;
+}
+
+.section-inner-property-form{
+    background-image: radial-gradient(circle at 94.16666666666667% 10.833333333333334%, #3C3A3E 0%, 17.5%, rgba(60,58,62,0) 35%), radial-gradient(circle at 92.5% 87.5%, #1B1A19 0%, 20%, rgba(27,26,25,0) 40%), radial-gradient(circle at 6.503906249999999% 88.037109375%, rgba(60,58,62,0.99) 0%, 25%, rgba(60,58,62,0) 50%), radial-gradient(circle at 6.666666666666667% 10.833333333333334%, #1B1A19 0%, 42%, rgba(27,26,25,0) 70%), radial-gradient(circle at 93.6865234375% 11.42578125%, #1B1A19 0%, 42%, rgba(27,26,25,0) 70%), radial-gradient(circle at 48.9013671875% 49.521484375%, #F1ECEA 0%, 100%, rgba(241,236,234,0) 100%);
+}
+
+.section-inner-property-form .property-form{
+    /* border: solid 2px var(--gold); */
+    background-color: #37363b;
+    padding: 30px;
+}
+
+.section-inner-property-form .property-form .header{
+    height: 60px;
+    line-height: 60px;
+    color: #f1ecea;
+    font-size: 40px;
+    text-align: center;
+}
+
+.section-inner-property-form .property-form .disc{
+    color: #f1ecea;
+    font-size: 12px;
+}
+
+.section-inner-property-form .know-more-text{
+    font-size: 20px;
+    color: #f1ecea;
+}
+
+.property_slider{
+    clear: both;    
+}
+
+.section-inner-news-header{
+    padding: 50px 0;
+    background-image: radial-gradient(circle at 94.16666666666667% 10.833333333333334%, #3C3A3E 0%, 17.5%, rgba(60,58,62,0) 35%), radial-gradient(circle at 92.5% 87.5%, #1B1A19 0%, 20%, rgba(27,26,25,0) 40%), radial-gradient(circle at 6.503906249999999% 88.037109375%, rgba(60,58,62,0.99) 0%, 25%, rgba(60,58,62,0) 50%), radial-gradient(circle at 6.666666666666667% 10.833333333333334%, #1B1A19 0%, 42%, rgba(27,26,25,0) 70%), radial-gradient(circle at 93.6865234375% 11.42578125%, #1B1A19 0%, 42%, rgba(27,26,25,0) 70%), radial-gradient(circle at 48.9013671875% 49.521484375%, #F1ECEA 0%, 100%, rgba(241,236,234,0) 100%);
+}
+
+.section-inner-news-header .banner-bg-space{
+    padding: 80px 0;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.section-inner-news-header .news-banner-block{
+    background-color: #3c3a3e;
+    width: 100%;
+    padding: 60px;
+    position: relative;
+    z-index: 99;
+}
+
+.section-inner-news-header .news-banner-block h1{
+    font-family: "Libre Baskerville", serif;
+    font-size: 50px;
+    color: #f1ecea;
+    margin-bottom: 30px;
+}
+
+.section-inner-news-header .news-banner-block p{
+    font-size: 14px;
+    color: #f1ecea;
+    margin-bottom: 30px;
+}
+
+.section-inner-news-header .bg-image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 120%;
+    height: 120%;
+    margin-top: -40px;
+    margin-left: -100px;
+}
+
+.section-inner-news-categories{
+    background-image: radial-gradient(circle at 94.16666666666667% 10.833333333333334%, #3C3A3E 0%, 17.5%, rgba(60,58,62,0) 35%), radial-gradient(circle at 92.5% 87.5%, #1B1A19 0%, 20%, rgba(27,26,25,0) 40%), radial-gradient(circle at 6.503906249999999% 88.037109375%, rgba(60,58,62,0.99) 0%, 25%, rgba(60,58,62,0) 50%), radial-gradient(circle at 6.666666666666667% 10.833333333333334%, #1B1A19 0%, 42%, rgba(27,26,25,0) 70%), radial-gradient(circle at 93.6865234375% 11.42578125%, #1B1A19 0%, 42%, rgba(27,26,25,0) 70%), radial-gradient(circle at 48.9013671875% 49.521484375%, #F1ECEA 0%, 100%, rgba(241,236,234,0) 100%);
+}
+
+.section-inner-news-categories h2{
+    font-family: "Libre Baskerville", serif;
+    text-align: center;
+    font-size: 40px;
+    color: #f1ecea;
+}
+
+.section-inner-news-categories .news-categories{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.section-inner-news-categories .news-categories .list{
+    flex: 1 1 calc(25% - 20px);
+    padding: 50px 20px;
+    background-color: #3c3a3e;
+    color: #f1ecea;
+    border: solid 1px var(--gold);
+    text-align: center;
+}
+
+.section-inner-news-categories .news-categories .list .title{
+    font-family: "Libre Baskerville", serif;
+    font-size: 22px;
+    height: 60px;
+    line-height: 60px;s
+}
+
 
 /* Media Query  */
 

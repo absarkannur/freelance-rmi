@@ -57,7 +57,7 @@ $(function () {
 
   var home_owl = $(".journey-slider").owlCarousel({
     autoWidth: true,
-    loop: true,
+    loop: false,
     margin: 20,
     nav: false,
     dots: false,
