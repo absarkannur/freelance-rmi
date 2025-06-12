@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Wix+Madefor+Display:wght@400..800&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/styles/bootstrap.min.css?v=89889898" />
@@ -161,29 +161,26 @@
 
                         <div class="button-wrap">
                             <button class="default-btn small dark">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
-                                </svg>
-                                <span class="text">Check Availability</span>
+                                <span class="text" style="margin: 0 0.9em 0 0.9em">Check Availability</span>
                             </button>
-                            <button class="default-btn small dark">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
-                                </svg>
-                                <span class="text">View floor plan</span>
+                            <a href="./assets/downloads/RivaResidenceFloorPlans.pdf" download>
+                                <button class="default-btn small dark">
+                                    <span class="text" style="margin: 0 0.9em 0 0.9em">View floor plan</span>
+                                </button>
+                            </a>
+                            <button class="default-btn small dark js_video_btn">
+                                <span class="text" style="margin: 0 0.9em 0 0.9em">View Video</span>
                             </button>
-                            <button class="default-btn small dark">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
-                                </svg>
-                                <span class="text">View Video</span>
-                            </button>
+                        </div>
+
+                        <div class="property-video-model" id="js_property_video_model">
+                            <div class="video-wrap">
+                                <span class="close">x</span>
+                                <video class="property-video" id="video" muted autoplay loop>
+                                    <source src="./assets/images/riva-video.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
                         </div>
 
                     </div>
@@ -580,7 +577,7 @@
                             <label for="">Subscribe to our newsletter</label>
                             <div class="form">
                                 <input class="default-input" type="email" placeholder="Email Address" required />
-                                <button class="default-btn light">&nbsp;&nbsp;Subscribe&nbsp;&nbsp;</button>
+                                <button class="default-btn darker">&nbsp;&nbsp;Subscribe&nbsp;&nbsp;</button>
                             </div>
                             <label class="label" for="">
                                 <input type="checkbox" /> &nbsp;I want to subscribe to your mailing list.
@@ -707,6 +704,22 @@
     <script src="./assets/scripts/countDown.js?v=89889898"></script>
     <script src="./assets/scripts/animation.js?v=89889898"></script>
     <script src="./assets/scripts/scripts.js?v=89889898"></script>
+
+    <script>
+
+        $(function () {
+
+            $('.js_video_btn').click(function () {
+                $('#js_property_video_model').show();
+            })
+
+            $('#js_property_video_model .close').click(function () {
+                $('#js_property_video_model').hide();
+            });
+
+        });
+
+    </script>
 
 </body>
 

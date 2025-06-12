@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Wix+Madefor+Display:wght@400..800&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/styles/bootstrap.min.css?v=88" />
@@ -133,7 +133,7 @@
                         <h1 class="title">Trusted Since 1970</h1>
                         <h2 class="sub-title">We craft iconic developments that empower growth and define tomorrow’s
                             skylines.</h2>
-                        <button class="default-btn dark">
+                        <button class="default-btn gold">
                             <div class="text" style="margin: 0 0.9em 0 0.9em">Read More</div>
                         </button>
                     </div>
@@ -257,15 +257,27 @@
                         </ul>
 
                         <div class="button-wrap">
-                            <button class="default-btn small dark">
+                            <button class="default-btn small darker">
                                 <span class="text" style="margin: 0 0.9em 0 0.9em">Check Availability</span>
                             </button>
-                            <button class="default-btn small dark">
-                                <span class="text" style="margin: 0 0.9em 0 0.9em">View floor plan</span>
-                            </button>
-                            <button class="default-btn small dark">
+                            <a href="./assets/downloads/RivaResidenceFloorPlans.pdf" download>
+                                <button class="default-btn small dark">
+                                    <span class="text" style="margin: 0 0.9em 0 0.9em">View floor plan</span>
+                                </button>
+                            </a>
+                            <button class="default-btn small light js_video_btn">
                                 <span class="text" style="margin: 0 0.9em 0 0.9em">View Video</span>
                             </button>
+                        </div>
+
+                        <div class="property-video-model" id="js_property_video_model">
+                            <div class="video-wrap">
+                                <span class="close">x</span>
+                                <video class="property-video" id="video" muted autoplay loop>
+                                    <source src="./assets/images/riva-video.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
                         </div>
 
                     </div>
@@ -347,10 +359,10 @@
                         </ul>
 
                         <div class="button-wrap">
-                            <button class="default-btn small light">
+                            <button class="default-btn small darker">
                                 <span class="text" style="margin: 0 0.9em 0 0.9em">Check Availability</span>
                             </button>
-                            <button class="default-btn small light">
+                            <button class="default-btn small dark">
                                 <span class="text" style="margin: 0 0.9em 0 0.9em">View floor plan</span>
                             </button>
                             <button class="default-btn small light">
@@ -1597,7 +1609,7 @@
                             <label for="">Subscribe to our newsletter</label>
                             <div class="form">
                                 <input class="default-input" type="email" placeholder="Email Address" required />
-                                <button class="default-btn light">&nbsp;&nbsp;Subscribe&nbsp;&nbsp;</button>
+                                <button class="default-btn darker">&nbsp;&nbsp;Subscribe&nbsp;&nbsp;</button>
                             </div>
                             <label class="label" for="">
                                 <input type="checkbox" /> &nbsp;I want to subscribe to your mailing list.
@@ -1758,6 +1770,21 @@
     <script src="./assets/scripts/animation.js?v=88"></script>
     <script src="./assets/scripts/scripts.js?v=88"></script>
 
+    <script>
+
+        $(function () {
+
+            $('.js_video_btn').click(function () {
+                $('#js_property_video_model').show();
+            })
+
+            $('#js_property_video_model .close').click(function () {
+                $('#js_property_video_model').hide();
+            });
+
+        });
+
+    </script>
 
 </body>
 

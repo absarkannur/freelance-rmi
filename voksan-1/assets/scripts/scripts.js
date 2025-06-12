@@ -62,10 +62,9 @@ $(function () {
     nav: false,
     dots: false,
     autoplay: true,
-    autoplayTimeout: 4000,
+    autoplayTimeout: 2000,
     autoplayHoverPause: true,
-    slideTransition: "linear",
-    // smartSpeed: 3000,
+    smartSpeed: 300,
   });
 
   $(".js_next").click(function () {

@@ -118,7 +118,7 @@
     visibility: hidden;
     width: 80%;
     height: 0;
-    top: 100px;
+    top: 99px;
     left: 0;
     right: 0;
     margin: auto;
@@ -327,7 +327,7 @@
     overflow: hidden;
     position: relative;
     background-color: #333;
-    padding: 300px 0 300px 0;
+    padding: 200px 0 200px 0;
 }
 
 .section-home-latest-project .bg-layer{
@@ -350,20 +350,21 @@
 
 .section-home-latest-project .property-info-wrap .title{
     font-family: "Libre Baskerville", serif;
+    font-style: italic;
+    font-size: 40px;
     color: #3e2b24;
-    font-size:54px;
-    margin-bottom: 10px;
+    margin-bottom: 19px;
 }
 
 .section-home-latest-project .property-info-wrap .sub-title{
     color: #3e2b24;
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 900;
 }
 
 .section-home-latest-project .property-info-wrap  .description{
     color: #3e2b24;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -383,6 +384,8 @@
 }
 
 .section-home-latest-project .property-info-wrap .amenities_list .list .title{
+    font-family: "Wix Madefor Display", sans-serif;
+    font-style: normal;
     color: #3e2b24;
     font-size: 14px;
     display: block;
@@ -401,6 +404,50 @@
 .section-home-latest-project .property-info-wrap  .description.light,
 .section-home-latest-project .property-info-wrap .amenities_list .list .title.light{
     color: var(--white);
+}
+
+.section-home-latest-project .property-video-model{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 999999999999;
+}
+
+.section-home-latest-project .property-video-model .video-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: var(--gold);
+    height: 500px;
+    width: 60%;
+    padding: 5px;
+}
+
+.section-home-latest-project .property-video-model .video-wrap .property-video{
+    width: 100%;
+    height: 100%;
+}
+
+.section-home-latest-project .property-video-model .video-wrap .close{
+    height: 30px;
+    line-height: 27px;
+    width: 30px;
+    position: absolute;
+    top: 0px;
+    right: -30px;
+    cursor: pointer;
+    z-index: 9999;
+    background-color: var(--gold);
+    color: var(--white);
+    text-align: center;
+    font-size: 16px;
 }
 
 /* Project Location Plan */
@@ -510,6 +557,10 @@
     height: 280px;
 }
 
+.section-home-journey-us .journey-slider .journey-item .image-wrap .imagethmb_inner img{
+    transform: scale(1.5);
+}
+
 /* .section-home-journey-us .journey-slider .journey-item .image-wrap img{
     height: 100%;
 } */
@@ -603,7 +654,8 @@
     align-items: center;
     justify-content: flex-start;
     gap: 5px;
-    color: var(--black);
+    color: var(--white);
+    text-shadow: 0 0 3px #000;
 }
 
 .section-home-journey-us .journey-slider .journey-item .content-wrap .location em{
@@ -693,6 +745,13 @@
 
 .section-home-contact .address-wrap .adds h3{
     color: var(--gold);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.section-home-contact .address-wrap .adds p{
+    color: #f1ecea;
+    font-size: 14px;
 }
 
 .section-home-contact .address-wrap .adds .social-list{
@@ -708,7 +767,7 @@
 .section-home-contact .contact-wrap .title{
     font-family: "Libre Baskerville", serif;
     color: #fff;
-    font-size: 54px;
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
@@ -878,7 +937,7 @@
 }
 
 .section-inner-expertise .experties-list .content-wrap{
-    width: 80%;
+    width: 70%;
     float: left;
     padding-top: 20px;
 }
@@ -886,13 +945,14 @@
 .section-inner-expertise .experties-list .content-wrap h3{
     font-family: "Libre Baskerville", serif;
     color: var(--gold);
-    font-size: 28px;
+    font-size: 22px;
 }
 
 .section-inner-expertise .experties-list .content-wrap p{
-    color: var(--white);
-    padding-top: 20px;
-    font-size: 18px;
+    color: #f1ecea;
+    padding-top: 10px;
+    font-size: 14px;
+    width: 90%;
 }
 
 .section-inner-testimonials-header{
@@ -1182,7 +1242,7 @@
     /* overflow: hidden; */
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 40px;
 }
@@ -1194,7 +1254,7 @@
 }
 
 .section-inner-our-jounery .jounery-list .list:hover{
-    transform: scale(1.08);
+    /* transform: scale(1.08); */
 }
 
 .section-inner-our-jounery .jounery-list .list .image-wrap{
@@ -1203,57 +1263,125 @@
     overflow: hidden;
 }
 
-.section-inner-our-jounery .jounery-list .list .image-wrap .imagethmb{
+.section-inner-our-jounery .jounery-list .list .image-wrap .imagethmb_inner{
     height: 300px;
+}
+
+.section-inner-our-jounery .jounery-list .list .image-wrap .imagethmb_inner img{
+    transform: scale(1.2);
 }
 
 .section-inner-our-jounery .jounery-list .list .content-wrap{
     background-color: #3c3a3e;
     padding: 20px;
-    height: 150px;
+    min-height: 250px;
 }
 
 .section-inner-our-jounery .jounery-list .list .content-wrap .year{
-    display: none;
+    display: block;
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
     height: 30px;
     line-height: 30px;
     color: #f1ecea;
 }
 .section-inner-our-jounery .jounery-list .list .content-wrap .title{
+    display: block;
     font-family: "Libre Baskerville", serif;
     font-weight: bold;
     font-size: 20px;
-    color: #f1ecea;
-    margin: 0;
+    color: var(--gold);
+    margin: 0 0 10px 0;
 }
 .section-inner-our-jounery .jounery-list .list .content-wrap .location{
-    position: absolute;
-    top: 10px;
-    right: 10px;
     display: block;
     font-size: 12px;
     color: #f1ecea;
     font-weight: bold;
-    text-shadow: 0 0 3px #000;
+    margin-bottom: 10px;
 }
 .section-inner-our-jounery .jounery-list .list .content-wrap .description{
     display: block;
     color: #f1ecea;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .section-inner-our-jounery .jounery-list .list .content-wrap .launched,
 .section-inner-our-jounery .jounery-list .list .content-wrap .handover{
-        display: block;
+    display: block;
     color: #f1ecea;
     height: 30px;
     line-height: 30px;
     font-size: 12px;
-    width: 50%;
-    float: left;
 }
+
+.section-inner-our-jounery .jounery-list .list .content-wrap .read_more{
+    display: block;
+    color: #f1ecea;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;    
+}
+
+.section-inner-our-jounery .jounery-list .list .journey-model{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.section-inner-our-jounery .jounery-list .list .journey-model .journey-m-wrap{
+    height: 500px;
+    width: 500px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;left: 0;right: 0;bottom: 0;margin: auto;
+}
+
+.section-inner-our-jounery .jounery-list .list .journey-model .journey-m-wrap .close{
+    position: absolute;
+    top: 0;
+    right: -32px;
+    width: 30px;
+    height: 30px;
+    line-height: 27px;
+    text-align: center;
+    color: #fff;
+    background-color: var(--gold);
+    z-index: 999;
+    cursor: pointer;
+}
+
+.section-inner-our-jounery .jounery-list .list .journey-model .journey-m-wrap .journey_slider{
+    overflow: hidden;
+    clear: both;
+}
+
+.section-inner-our-jounery .jounery-list .list .journey-model .journey-m-wrap .journey_slider .list{
+    height: 500px;
+    width: 100%;
+}
+
+.section-inner-our-jounery .jounery-list .list .journey-model .journey_slider .list .image-wrap{
+    height: 250px;
+}
+
+.section-inner-our-jounery .jounery-list .list .journey-model .journey_slider .list .content-wrap{
+    height: 250px;
+}
+
+.section-inner-our-jounery .jounery-list .list .journey-model .journey_slider .list .content-wrap .launched,
+.section-inner-our-jounery .jounery-list .list .journey-model .journey_slider .list .content-wrap .handover{
+    display: inline;
+}
+
+/* ------------ */
 
 .section-inner-our-jounery-excellence{
     padding: 60px 0;
@@ -1528,7 +1656,9 @@
 
 /* Desktop */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-
+    body{
+        clear: both;
+    }
 }
 
 /* Mobile */
@@ -1623,6 +1753,10 @@
     .section-home-latest-project .property-info-wrap .button-wrap .default-btn{
         margin-bottom: 10px;
     }
+
+
+
+
 
     .section-home-about-us .about-bg-banner{
         position: unset;

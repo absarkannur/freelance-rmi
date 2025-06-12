@@ -30,7 +30,7 @@
 html,body{width: 100%;height: 100%;}
 html {scroll-behavior: smooth;}
 body{
-  font-family: "Raleway", sans-serif;
+  font-family: "Wix Madefor Display", sans-serif;
   background-color: var(--background-color);
   font-variant-numeric: lining-nums;
   cursor: url('./../icons/cursor.png'), auto;
@@ -91,15 +91,11 @@ ul{
 }
 
 .default-btn{
-  background-color: #ffffff00;
-  height: 2.9em;
-  border-radius: 11px;
-  text-align: right;
+  height: 40px;
+  text-align: center;
   transition: all 0.6s ease;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  border: none;
+  cursor: pointer;
 }
 
 .default-btn.small{
@@ -112,28 +108,37 @@ ul{
   width: 100%;
 }
 
+.default-btn.gold{
+  font-weight: 600;
+  background-color: #c4b693;
+  color: #3e2b24;
+}
+
+.default-btn.gold:hover{
+  background-color: #3e2b24;
+  color: #c4b693;
+}
+
+.default-btn.darker{
+  background-color: #1b1a19;
+  color: #f1ecea;
+}
 .default-btn.dark{
-    color: #333;
-    border: #333 2px solid; 
+  background-color: #3c3a3e;
+  color: #f1ecea;
 }
 .default-btn.light{
-    color: #fff;
-    border: #FFF 2px solid;
+  background-color: #a29f9f;
+    color: #f1ecea;
 }
 
-.default-btn:hover {
-  cursor: pointer;
-}
 
-.default-btn.dark:hover{
-  background-color: #333;
-  color: #fff;
-}
+.default-btn.darker:hover,
+.default-btn.dark:hover,
 .default-btn.light:hover{
-  background-color: #FFF;
-  color: #111;
+  background-color: #f1ecea;
+  color: #3c3a3e;
 }
-
 
 .default-btn svg {
   width: 1.6em;
@@ -166,8 +171,7 @@ ul{
 }
 
 .default-input{
-  height: 3.2em;
-  border-radius: 11px;
+  height: 40px;
   padding: 0 10px;
   font-size: 13px;
   background-color: #fff;
@@ -181,7 +185,6 @@ ul{
 }
 
 .default-textarea{
-  border-radius: 11px;
   font-size: 13px;
   padding: 10px;
   background-color: #fff;
@@ -217,6 +220,12 @@ ul{
 
 .dropdown-menu.show{
   display: none;
+}
+
+/* Container */
+
+.container-fluid {
+    max-width: 1490px;
 }
 
 /* Media Query  */
