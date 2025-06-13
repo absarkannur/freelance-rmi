@@ -250,3 +250,7 @@ ul{
 @media (max-width: 415px) {
 
 }
+
+.journey-slider .owl-stage{
+  transition-timing-function: linear !important;
+}

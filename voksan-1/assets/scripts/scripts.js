@@ -57,20 +57,23 @@ $(function () {
 
   var home_owl = $(".journey-slider").owlCarousel({
     autoWidth: true,
-    loop: false,
+    loop: true,
     margin: 20,
     nav: false,
     dots: false,
+    stagePadding: 0,
     autoplay: true,
-    autoplayTimeout: 2000,
+    autoplayTimeout: 2500,
     autoplayHoverPause: true,
     smartSpeed: 300,
   });
 
-  $(".js_next").click(function () {
+  $(".js_jr_next").click(function () {
     home_owl.trigger("next.owl.carousel");
   });
-  $(".js_prev").click(function () {
+  $(".js_jr_prev").click(function () {
     home_owl.trigger("prev.owl.carousel");
   });
+
+  // ----
 });
