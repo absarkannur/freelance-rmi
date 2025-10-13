@@ -2,6 +2,17 @@
     user-select: none
 }
 
+
+
+@font-face {
+    font-family: 'RelaisTrial';
+    src: local('RelaisTrial'),
+        url('./RelaisTrial-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     padding: 0;
     margin: 0
@@ -164,6 +175,7 @@ div#promo {
     text-decoration: none;
     width: 62%;
     z-index: 9999999;
+    font-family: 'RelaisTrial';
 }
 
 .video_wrapp {
