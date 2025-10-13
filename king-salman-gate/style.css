@@ -155,7 +155,15 @@ div#promo {
 }
 
 .click_video {
+    height: 34px;
+    line-height: 34px;
     bottom: 31px;
+    background-color: #d4ad67;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    width: 62%;
+    z-index: 9999999;
 }
 
 .video_wrapp {
