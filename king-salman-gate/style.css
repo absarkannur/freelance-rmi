@@ -1,0 +1,189 @@
+* {
+    user-select: none
+}
+
+body {
+    padding: 0;
+    margin: 0
+}
+
+.ads-body {
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden
+}
+
+.loader-dash {
+    background-color: #ffffff;
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 999999
+}
+
+.loader,
+.loader:after,
+.loader:before {
+    background: #535353;
+    -webkit-animation: load1 1s infinite ease-in-out;
+    animation: load1 1s infinite ease-in-out;
+    width: .5em
+}
+
+.loader {
+    color: #535353;
+    text-indent: -9999em;
+    position: absolute;
+    font-size: 6px;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation-delay: -.16s;
+    animation-delay: -.16s;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto
+}
+
+.loader:after,
+.loader:before {
+    position: absolute;
+    top: 0;
+    content: ''
+}
+
+.loader:before {
+    left: -1.5em;
+    -webkit-animation-delay: -.32s;
+    animation-delay: -.32s
+}
+
+.loader:after {
+    left: 1.5em
+}
+
+@-webkit-keyframes load1 {
+
+    0%,
+    100%,
+    80% {
+        box-shadow: 0 0;
+        height: 4em
+    }
+
+    40% {
+        box-shadow: 0 -2em;
+        height: 5em
+    }
+}
+
+@keyframes load1 {
+
+    0%,
+    100%,
+    80% {
+        box-shadow: 0 0;
+        height: 4em
+    }
+
+    40% {
+        box-shadow: 0 -2em;
+        height: 5em
+    }
+}
+
+.full-screen {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.video_bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0px;
+    width: 320px;
+    height: 180px;
+    background-color: #000;
+    z-index: 9999;
+}
+
+div#promo {
+    width: 320px;
+    height: 480px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#page1,
+#page2,
+#page3 {
+    display: none;
+}
+
+.click_video,
+.btn_video {
+    position: absolute;
+    display: block;
+    height: 34px;
+    width: 100%;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.btn_video {
+    bottom: 77px;
+}
+
+.click_video {
+    bottom: 31px;
+}
+
+.video_wrapp {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 320px;
+    height: 480px;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999999;
+}
+
+.video_wrapp .video_bg {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.close {
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 27px;
+}

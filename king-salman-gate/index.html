@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="ad.size" content="width=320,height=480" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="#">
+    <title></title>
+    <link rel="stylesheet" href="./animate.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript">
+        var clickTag = "https://google.com/";
+    </script>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        // ${CACHEBUSTER} 
+        // ${CLICK_URL_ENC}
+
+        function clickThrough() {
+            javascript: window.open(window.clickTag);
+        }
+    </script>
+
+    <div class="ads-body" style="width: 320px;height: 480px;">
+
+        <div class="loader-dash" id="loader">
+            <div class="loader">...</div>
+        </div>
+
+        <div id="page1">
+            <img src="./wipe1.png" class="full-screen" />
+            <img src="./layer1-1.png" class="full-screen animate__animated animate__fadeInDown" />
+            <img src="./layer1-2.png" class="full-screen animate__animated animate__fadeInUp animate__delay-0-5s" />
+            <img src="./layer1-3.png"
+                class="hand full-screen animate__animated animate__delay-1s animate__slower animate__shakeX" />
+        </div>
+
+        <div id="page2">
+            <div id="promo" class="scratchpad"></div>
+        </div>
+
+        <div id="page3">
+            <img src="./wipe2.png" class="full-screen" />
+            <img src="./layer2-2.png" class="full-screen animate__animated animate__fadeIn" />
+            <img src="./layer2-3.png" class="full-screen animate__animated animate__fadeInLeft animate__delay-0-5s" />
+            <img src="./layer2-4.png" class="full-screen animate__animated animate__fadeInLeft animate__delay-1s" />
+            <img src="./layer2-5.png" class="full-screen animate__animated animate__fadeInLeft animate__delay-1-3s" />
+            <img src="./layer2-6.png" class="full-screen animate__animated animate__fadeInLeft animate__delay-1-6s" />
+
+            <span class="btn_video">&nbsp;</span>
+            <a class="click_video" href="javascript:void(0)" onclick="clickThrough()"></a>
+
+            <div class="video_wrapp">
+                <span class="close">&times;</span>
+                <video class="video_bg" id="video_bg" muted playsinline controls>
+                    <source src="./video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="./jquery.min.js"></script>
+    <script src="./wScratchPad.min.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
