@@ -64,7 +64,7 @@ $(function(){
     setTimeout(function(){
         $('#page1').fadeOut(9999);
         $('#page2').show();
-    },4000);
+    },2300);
 
     $('.hand').mousedown(function(){
         $('#page1').hide();
