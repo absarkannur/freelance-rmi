@@ -14007,6 +14007,7 @@ header .header-top-bar .top-social-icons a:hover {
 .footer-wrap .single-footer-wid.site_info_widget .single-contact-info a {
   color: #53545A;
   font-weight: 400;
+  font-size: 14px;
 }
 
 .footer-wrap .single-footer-wid.site_info_widget .single-contact-info a:hover {
