@@ -6525,7 +6525,7 @@ header .header-top-bar .top-social-icons a:hover {
 }
 
 .tab-content-block .nav-pills .nav-link {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   color: #191514;
   text-transform: uppercase;
@@ -7162,6 +7162,9 @@ header .header-top-bar .top-social-icons a:hover {
   box-sizing: border-box;
   margin-right: 25px;
   transition: all 0.4s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 500px) {
@@ -7358,6 +7361,7 @@ header .header-top-bar .top-social-icons a:hover {
   Service Section Styles
  ------------------------------------ */
 .single-service-box {
+  min-height: 380px;
   padding: 40px;
   position: relative;
   overflow: hidden;
@@ -11707,7 +11711,7 @@ header .header-top-bar .top-social-icons a:hover {
   position: absolute;
   right: 0;
   bottom: 0;
-  background-color: #fff;
+  background-color: #efefef;
   padding: 30px;
 }
 
@@ -21101,4 +21105,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+.faq-funfact-section .single-fun-fact h3 {
+  font-size: 20px;
+}
